@@ -4,14 +4,14 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @MappedSuperclass
-public class AbstractEntity<PK extends Serializable> implements PersistentEntity<PK> {
+public abstract class AbstractEntity<PK extends Serializable> implements PersistentEntity<PK> {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private PK id;
 
     @Version
-    private Integer version;
+    private Integer version = 1;
 
     public PK getId() {
         return id;

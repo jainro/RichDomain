@@ -1,9 +1,10 @@
 package com.rohit.domain;
 
 import javax.persistence.Entity;
+import javax.persistence.SequenceGenerator;
 
 @Entity
-
+@SequenceGenerator(name="seq", initialValue = 1, allocationSize = 1)
 public class Employee extends AbstractEntity<Long> {
 
     private String firstName;

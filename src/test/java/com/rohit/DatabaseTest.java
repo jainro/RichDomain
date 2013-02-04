@@ -2,8 +2,7 @@ package com.rohit;
 
 import com.rohit.config.DataConfig;
 import com.rohit.domain.Employee;
-import com.rohit.domain.IEmployeeRepository;
-import com.rohit.repository.CrudRepository;
+import com.rohit.repository.PersistenceRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,18 +10,15 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.enterprise.inject.spi.Bean;
-import javax.persistence.EntityManager;
+import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertThat;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = {DataConfig.class})
 public class DatabaseTest {
 
-   /* @Autowired
-    IEmployeeRepository employeeRepository;*/
-
-      @Autowired
-     CrudRepository<Employee> employeeRepository;
+    @Autowired
+    PersistenceRepository<Employee> employeeRepository;
 
     @Test
     @Transactional
@@ -30,8 +26,7 @@ public class DatabaseTest {
         final Employee employee = new Employee("rohit", "jain");
         employeeRepository.save(employee);
 
-        System.out.println(employee.getId());
-        System.out.println(employee.getVersion());
-
+        assertThat(employee.getId(), is(1L)) ;
+        assertThat(employee.getVersion(), is(1)) ;
     }
 }
