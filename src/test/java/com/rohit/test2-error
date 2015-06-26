@@ -1,0 +1,5897 @@
+
+[
+  {
+    "id": "cancel-an-addon-trade-for-dcn-gen-3-for-apac",
+    "tags": [
+      {
+        "name": "@AQ3",
+        "line": 1
+      },
+      {
+        "name": "@MPP",
+        "line": 1
+      }
+    ],
+    "description": "",
+    "name": "Cancel an AddOn Trade for DCN Gen-3 for APAC",
+    "keyword": "Feature",
+    "line": 2,
+    "elements": [
+      {
+        "id": "cancel-an-addon-trade-for-dcn-gen-3-for-apac;cancel-an-addon-on-dcn-gen-3;;2",
+        "tags": [
+          {
+            "name": "@Gen-3",
+            "line": 4
+          },
+          {
+            "name": "@Stomp",
+            "line": 4
+          },
+          {
+            "name": "@GR",
+            "line": 4
+          },
+          {
+            "name": "@AddOnCancel",
+            "line": 4
+          },
+          {
+            "name": "@AQ3",
+            "line": 1
+          },
+          {
+            "name": "@DCN",
+            "line": 4
+          },
+          {
+            "name": "@Klondike",
+            "line": 4
+          },
+          {
+            "name": "@MPP",
+            "line": 1
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 113799030,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedExecutionContext.before(Scenario)"
+            }
+          }
+        ],
+        "description": "",
+        "name": "Cancel an AddOn on DCN Gen-3",
+        "keyword": "Scenario Outline",
+        "line": 105,
+        "steps": [
+          {
+            "result": {
+              "duration": 22784759166,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"FaradProductTemplate.json\",\"absoluteFilePath\":\"artefacts/0_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"NewBookingResponse.json\",\"absoluteFilePath\":\"artefacts/1_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "As a \"Sales Person\" I create a Booking in Stomp using FaradProduct Template \"store/faradProductTemplates/[AQ3] DCN Gen-3.json\"",
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sales Person",
+                  "offset": 6
+                },
+                {
+                  "val": "FaradProduct",
+                  "offset": 54
+                },
+                {
+                  "val": "store/faradProductTemplates/[AQ3] DCN Gen-3.json",
+                  "offset": 77
+                }
+              ],
+              "location": "AddOnSteps.I_create_a_Booking_in_Stomp_using_FaradProduct_Template(String,String,String)"
+            },
+            "output": [
+              "{\"message\":\"Successfully uploaded drop file\",\"productSymbol\":\"STOMP166452\",\"status\":\"200\"}"
+            ],
+            "matchedColumns": [
+              0
+            ]
+          },
+          {
+            "result": {
+              "duration": 7166805558,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Product_1686096Pv1.json\",\"absoluteFilePath\":\"artefacts/2_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "I want to Book a new Trade on this Product I fill following values:",
+            "keyword": "And ",
+            "line": 7,
+            "match": {
+              "location": "AddOnSteps.I_want_to_Book_a_new_Trade_on_this_Product_I_fill_following_values(FieldValuePair\u003e)"
+            },
+            "output": [
+              "Querying Stomp for Product: 1686096Pv1"
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Section",
+                  "Field",
+                  "Value"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "Amend Contract",
+                  "Issue Date",
+                  "\u003dtoday(7)"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "Trade",
+                  "Settlement Date",
+                  "\u003dtoday(7)"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "Contract",
+                  "Final Settlement Date",
+                  "\u003dtoday(7)"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "Trade",
+                  "Trade Date",
+                  "\u003dtoday"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "Allocations",
+                  "Risk Class",
+                  "EBSK_JP"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "Issuance Platform",
+                  "Issuance Platform",
+                  "JP Standalone"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "Quoting Details",
+                  "Issue Amount",
+                  "50000000"
+                ],
+                "line": 15
+              },
+              {
+                "cells": [
+                  "Allocations",
+                  "Notional Amount",
+                  "50000000"
+                ],
+                "line": 16
+              }
+            ]
+          },
+          {
+            "result": {
+              "duration": 4506578,
+              "status": "passed"
+            },
+            "name": "In Underlying Fixings table inside Fixings section of Product I enter following values:",
+            "keyword": "And ",
+            "line": 17,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Underlying Fixings",
+                  "offset": 3
+                },
+                {
+                  "val": "Fixings",
+                  "offset": 35
+                },
+                {
+                  "val": "Product",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.In_table_inside_section_of_I_enter_following(String,String,StompEntityType,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Reference Spot Prices",
+                  "Reference Is Final"
+                ],
+                "line": 18
+              },
+              {
+                "cells": [
+                  "23",
+                  "Yes"
+                ],
+                "line": 19
+              },
+              {
+                "cells": [
+                  "33",
+                  "Yes"
+                ],
+                "line": 20
+              }
+            ]
+          },
+          {
+            "result": {
+              "duration": 90031650950,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Product_1686096Pv1.json\",\"absoluteFilePath\":\"artefacts/3_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Product_After_SUBMIT_1686096Pv2.json\",\"absoluteFilePath\":\"artefacts/4_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "I SUBMIT the Product in Stomp and wait for 20 seconds so that all the Stomp downstream systems are in Sync because of STOMP performance issue",
+            "keyword": "And ",
+            "line": 21,
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "SUBMIT",
+                  "offset": 2
+                },
+                {
+                  "val": "Product",
+                  "offset": 13
+                },
+                {
+                  "val": "20",
+                  "offset": 43
+                },
+                {
+                  "val": "so that all the Stomp downstream systems are in Sync because of STOMP performance issue",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.I_the_Product_in_Stomp_and_wait_for_seconds(String,String,StompEntityType,long,String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 11064148377,
+              "status": "failed",
+              "error_message": "java.lang.AssertionError: State of the Trade in Stomp\nExpected: is \"Booked\"\n     but: was \"Being Booked\"\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)\r\n\tat com.ubs.ged.testautomation.cukes.stomp.AddOnSteps.verifyStompEntityState(AddOnSteps.java:228)\r\n\tat com.ubs.ged.testautomation.cukes.stomp.AddOnSteps.In_Stomp_I_see_the_Product_in_state(AddOnSteps.java:69)\r\n\tat com.ubs.ged.testautomation.cukes.stomp.AddOnSteps.In_Stomp_I_see_the_Product_in_and_Trade_in_state(AddOnSteps.java:75)\r\n\tat âœ½.And In Stomp I see the Product in \"Created\" and Trade in \"Booked\" state([AQ3] [MPP] DCN Gen-3 Cancel AddOn.feature:22)\r\n"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Product_1686096Pv2.json\",\"absoluteFilePath\":\"artefacts/5_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Product_StateInStomp.json\",\"absoluteFilePath\":\"artefacts/6_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Trade_641786Tv2.json\",\"absoluteFilePath\":\"artefacts/7_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Trade_StateInStomp.json\",\"absoluteFilePath\":\"artefacts/8_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "In Stomp I see the Product in \"Created\" and Trade in \"Booked\" state",
+            "keyword": "And ",
+            "line": 22,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Created",
+                  "offset": 31
+                },
+                {
+                  "val": "Booked",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.In_Stomp_I_see_the_Product_in_and_Trade_in_state(String,String)"
+            },
+            "output": [
+              "Querying Stomp for Product: 1686096Pv2",
+              "Querying Stomp for Trade: 641786Tv2"
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I wait for 60 seconds so that all the Klondike downstream systems are in Sync",
+            "keyword": "And ",
+            "line": 23,
+            "match": {
+              "arguments": [
+                {
+                  "val": "60",
+                  "offset": 11
+                },
+                {
+                  "val": "so that all the Klondike downstream systems are in Sync",
+                  "offset": 22
+                }
+              ],
+              "location": "GenericSteps.I_wait_for_seconds(long,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Klondike I see the Product in Live status with 12 Tickets in Processed state",
+            "keyword": "And ",
+            "line": 24,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Live",
+                  "offset": 33
+                },
+                {
+                  "val": "12",
+                  "offset": 50
+                },
+                {
+                  "val": "Processed",
+                  "offset": 64
+                }
+              ],
+              "location": "KlondikeSteps.In_Klondike_I_see_the_Product_in_Live_status_with_Tickets_in_state(String,int,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I want to Book a new AddOn on this Product I fill following values:",
+            "keyword": "And ",
+            "line": 25,
+            "match": {
+              "location": "AddOnSteps.I_want_to_Book_a_new_AddOn_on_this_Product_I_fill_following_values(FieldValuePair\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Section",
+                  "Field",
+                  "Value"
+                ],
+                "line": 26
+              },
+              {
+                "cells": [
+                  "Trade",
+                  "Trade Date",
+                  "\u003dtoday"
+                ],
+                "line": 27
+              },
+              {
+                "cells": [
+                  "Allocations",
+                  "Percentage Price",
+                  "0.90"
+                ],
+                "line": 28
+              },
+              {
+                "cells": [
+                  "Allocations",
+                  "Notional Amount",
+                  "4000000"
+                ],
+                "line": 29
+              },
+              {
+                "cells": [
+                  "Quoting Details",
+                  "Upfront Retrocession Rate",
+                  "0.10"
+                ],
+                "line": 30
+              }
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Underlying Fixings table inside Trade section of Trade I enter following values:",
+            "keyword": "And ",
+            "line": 31,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Underlying Fixings",
+                  "offset": 3
+                },
+                {
+                  "val": "Trade",
+                  "offset": 35
+                },
+                {
+                  "val": "Trade",
+                  "offset": 52
+                }
+              ],
+              "location": "AddOnSteps.In_table_inside_section_of_I_enter_following(String,String,StompEntityType,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Reference Spot Prices"
+                ],
+                "line": 32
+              },
+              {
+                "cells": [
+                  "55"
+                ],
+                "line": 33
+              },
+              {
+                "cells": [
+                  "77"
+                ],
+                "line": 34
+              }
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I SUBMIT the Trade in Stomp and wait for 20 seconds so that all the Stomp downstream systems are in sync",
+            "keyword": "And ",
+            "line": 35,
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "SUBMIT",
+                  "offset": 2
+                },
+                {
+                  "val": "Trade",
+                  "offset": 13
+                },
+                {
+                  "val": "20",
+                  "offset": 41
+                },
+                {
+                  "val": "so that all the Stomp downstream systems are in sync",
+                  "offset": 52
+                }
+              ],
+              "location": "AddOnSteps.I_the_Product_in_Stomp_and_wait_for_seconds(String,String,StompEntityType,long,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Stomp I see the Product in \"Created\" and Trade in \"Booked\" state",
+            "keyword": "And ",
+            "line": 36,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Created",
+                  "offset": 31
+                },
+                {
+                  "val": "Booked",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.In_Stomp_I_see_the_Product_in_and_Trade_in_state(String,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Stomp I see 1st AddOn Trade in \"Booked\" state",
+            "keyword": "And ",
+            "line": 37,
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 15
+                },
+                {
+                  "val": "Booked",
+                  "offset": 35
+                }
+              ],
+              "location": "AddOnSteps.In_Stomp_I_see_st_AddOn_Trade_in_state(int,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I wait for 60 seconds so that all the Klondike downstream systems are in Sync",
+            "keyword": "And ",
+            "line": 38,
+            "match": {
+              "arguments": [
+                {
+                  "val": "60",
+                  "offset": 11
+                },
+                {
+                  "val": "so that all the Klondike downstream systems are in Sync",
+                  "offset": 22
+                }
+              ],
+              "location": "GenericSteps.I_wait_for_seconds(long,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Klondike I see the Product in Live status with 24 Tickets in Processed state",
+            "keyword": "And ",
+            "line": 39,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Live",
+                  "offset": 33
+                },
+                {
+                  "val": "24",
+                  "offset": 50
+                },
+                {
+                  "val": "Processed",
+                  "offset": 64
+                }
+              ],
+              "location": "KlondikeSteps.In_Klondike_I_see_the_Product_in_Live_status_with_Tickets_in_state(String,int,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Klondike I see the Product in Live status and with:",
+            "keyword": "And ",
+            "line": 40,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Live",
+                  "offset": 33
+                }
+              ],
+              "location": "KlondikeSteps.In_Klondike_I_see_the_Product_in_status_and_with(String,FieldValuePair\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Field",
+                  "Value"
+                ],
+                "line": 41
+              },
+              {
+                "cells": [
+                  "issueAmount",
+                  "5.4E7"
+                ],
+                "line": 42
+              }
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I CANCEL the 1st AddOn Trade in Stomp and wait for 20 seconds so that all the Stomp downstream systems are in sync",
+            "keyword": "When ",
+            "line": 45,
+            "match": {
+              "arguments": [
+                {
+                  "val": "CANCEL",
+                  "offset": 2
+                },
+                {
+                  "val": "1",
+                  "offset": 13
+                },
+                {
+                  "val": "20",
+                  "offset": 51
+                },
+                {
+                  "val": "so that all the Stomp downstream systems are in sync",
+                  "offset": 62
+                }
+              ],
+              "location": "AddOnSteps.I_the_st_AddOn_Trade_in_Stomp_and_wait_for_seconds(String,int,long,String)"
+            },
+            "comments": [
+              {
+                "value": "# issueAmount 5.4E7 \u003d 54M",
+                "line": 43
+              }
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Stomp I see the Product in \"Created\" and Trade in \"Booked\" state",
+            "keyword": "Then ",
+            "line": 46,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Created",
+                  "offset": 31
+                },
+                {
+                  "val": "Booked",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.In_Stomp_I_see_the_Product_in_and_Trade_in_state(String,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Stomp I see 1st AddOn Trade in \"Cancelled\" state",
+            "keyword": "And ",
+            "line": 47,
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 15
+                },
+                {
+                  "val": "Cancelled",
+                  "offset": 35
+                }
+              ],
+              "location": "AddOnSteps.In_Stomp_I_see_st_AddOn_Trade_in_state(int,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I wait for 60 seconds so that all the Klondike downstream systems are in Sync",
+            "keyword": "And ",
+            "line": 49,
+            "match": {
+              "arguments": [
+                {
+                  "val": "60",
+                  "offset": 11
+                },
+                {
+                  "val": "so that all the Klondike downstream systems are in Sync",
+                  "offset": 22
+                }
+              ],
+              "location": "GenericSteps.I_wait_for_seconds(long,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Klondike I see the Product in Live status and with:",
+            "keyword": "Then ",
+            "line": 50,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Live",
+                  "offset": 33
+                }
+              ],
+              "location": "KlondikeSteps.In_Klondike_I_see_the_Product_in_status_and_with(String,FieldValuePair\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Field",
+                  "Value"
+                ],
+                "line": 51
+              },
+              {
+                "cells": [
+                  "issueAmount",
+                  "5.0E7"
+                ],
+                "line": 52
+              }
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Klondike I see 33 Tickets and I group them by events",
+            "keyword": "And ",
+            "line": 54,
+            "match": {
+              "arguments": [
+                {
+                  "val": "33",
+                  "offset": 18
+                }
+              ],
+              "location": "KlondikeSteps.In_Klondike_I_see_Tickets_and_I_group_them_by_events(int)"
+            },
+            "comments": [
+              {
+                "value": "# issueAmount 5.0E7 \u003d 50M",
+                "line": 53
+              }
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I see following Tickets grouped under \"Primary Zuul Gozer Note Trade Ticket\":",
+            "keyword": "And ",
+            "line": 55,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Primary Zuul Gozer Note Trade Ticket",
+                  "offset": 39
+                }
+              ],
+              "location": "KlondikeSteps.I_see_following_Tickets_grouped_under_(String,ExpectedTicket\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "TicketType",
+                  "SubTicketType",
+                  "Source",
+                  "State"
+                ],
+                "line": 56
+              },
+              {
+                "cells": [
+                  "PrimaryZuulGozerNoteTradeTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 57
+              },
+              {
+                "cells": [
+                  "IssuanceTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 58
+              },
+              {
+                "cells": [
+                  "TriggerRebuildTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 59
+              },
+              {
+                "cells": [
+                  "SecuritisedTradeTicketNF",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 60
+              },
+              {
+                "cells": [
+                  "EventStoreTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 61
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Primary Zuul Gozer Note Trade Ticket",
+                  "",
+                  "Processed"
+                ],
+                "line": 62
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Issuance Ticket",
+                  "",
+                  "Processed"
+                ],
+                "line": 63
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Securitised Trade Ticket N F",
+                  "",
+                  "Processed"
+                ],
+                "line": 64
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "ProductCreationWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 65
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "TradeTicketWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 66
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "SecuritisationWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 67
+              },
+              {
+                "cells": [
+                  "BrainTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 68
+              }
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I see following Tickets grouped under \"Zuul Primary Add On Trade Ticket after 1st Add On\":",
+            "keyword": "And ",
+            "line": 69,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Zuul Primary Add On Trade Ticket after 1st Add On",
+                  "offset": 39
+                }
+              ],
+              "location": "KlondikeSteps.I_see_following_Tickets_grouped_under_(String,ExpectedTicket\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "TicketType",
+                  "SubTicketType",
+                  "Source",
+                  "State"
+                ],
+                "line": 70
+              },
+              {
+                "cells": [
+                  "ZuulPrimaryAddOnTradeTicket",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 71
+              },
+              {
+                "cells": [
+                  "AmendTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 72
+              },
+              {
+                "cells": [
+                  "SecuritisedTradeTicketNF",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 73
+              },
+              {
+                "cells": [
+                  "IssuanceTicket",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 74
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "AmendTicketWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 75
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Securitised Trade Ticket N F",
+                  "",
+                  "Processed"
+                ],
+                "line": 76
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "TradeTicketWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 77
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Issuance Ticket",
+                  "",
+                  "Processed"
+                ],
+                "line": 78
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "SecuritisationWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 79
+              },
+              {
+                "cells": [
+                  "BrainTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 80
+              },
+              {
+                "cells": [
+                  "EventStoreTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 81
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Amend Ticket",
+                  "",
+                  "Processed"
+                ],
+                "line": 82
+              }
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I see following Tickets grouped under \"Amend Ticket\":",
+            "keyword": "And ",
+            "line": 83,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Amend Ticket",
+                  "offset": 39
+                }
+              ],
+              "location": "KlondikeSteps.I_see_following_Tickets_grouped_under_(String,ExpectedTicket\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "TicketType",
+                  "SubTicketType",
+                  "Source",
+                  "State"
+                ],
+                "line": 84
+              },
+              {
+                "cells": [
+                  "AmendTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 85
+              },
+              {
+                "cells": [
+                  "EventStoreTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 86
+              },
+              {
+                "cells": [
+                  "BrainTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 87
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "AmendTicketWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 88
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "TicketCancelTicketWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 89
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "TicketCancelTicketWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 90
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Ticket Cancel Ticket",
+                  "",
+                  "Processed"
+                ],
+                "line": 91
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Amend Ticket",
+                  "",
+                  "Processed"
+                ],
+                "line": 92
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Ticket Cancel Ticket",
+                  "",
+                  "Processed"
+                ],
+                "line": 93
+              }
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I wait for 180 seconds so that GR EPS Instrument Cache is updated",
+            "keyword": "And ",
+            "line": 95,
+            "match": {
+              "arguments": [
+                {
+                  "val": "180",
+                  "offset": 11
+                },
+                {
+                  "val": "so that GR EPS Instrument Cache is updated",
+                  "offset": 23
+                }
+              ],
+              "location": "GenericSteps.I_wait_for_seconds(long,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In GR APAC I see a updated Instrument",
+            "keyword": "Then ",
+            "line": 96,
+            "match": {
+              "arguments": [
+                {
+                  "val": "APAC",
+                  "offset": 6
+                }
+              ],
+              "location": "GRSteps.In_GR_I_see_a_new_Instrument(String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In GR I see 1 Live Tallies for Risk Class \"EBSK_JP\"",
+            "keyword": "And ",
+            "line": 97,
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 12
+                },
+                {
+                  "val": "Live",
+                  "offset": 14
+                },
+                {
+                  "val": "EBSK_JP",
+                  "offset": 43
+                }
+              ],
+              "location": "GRSteps.In_GR_I_see_Live_Or_Cancelled_Tallies_for_Risk_Class(int,String,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In GR I see 1 Live Tallies for Risk Class \"WARRISS\"",
+            "keyword": "And ",
+            "line": 98,
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 12
+                },
+                {
+                  "val": "Live",
+                  "offset": 14
+                },
+                {
+                  "val": "WARRISS",
+                  "offset": 43
+                }
+              ],
+              "location": "GRSteps.In_GR_I_see_Live_Or_Cancelled_Tallies_for_Risk_Class(int,String,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In GR I see 2 Cancelled Tallies for Risk Class \"EBSK_JP\"",
+            "keyword": "And ",
+            "line": 99,
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 12
+                },
+                {
+                  "val": "Cancelled",
+                  "offset": 14
+                },
+                {
+                  "val": "EBSK_JP",
+                  "offset": 48
+                }
+              ],
+              "location": "GRSteps.In_GR_I_see_Live_Or_Cancelled_Tallies_for_Risk_Class(int,String,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In GR I see 2 Cancelled Tallies for Risk Class \"WARRISS\"",
+            "keyword": "And ",
+            "line": 100,
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 12
+                },
+                {
+                  "val": "Cancelled",
+                  "offset": 14
+                },
+                {
+                  "val": "WARRISS",
+                  "offset": 48
+                }
+              ],
+              "location": "GRSteps.In_GR_I_see_Live_Or_Cancelled_Tallies_for_Risk_Class(int,String,String)"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "cancel-an-addon-trade-for-dcn-gen-3-for-apac;cancel-an-addon-on-dcn-gen-3;;3",
+        "tags": [
+          {
+            "name": "@Gen-3",
+            "line": 4
+          },
+          {
+            "name": "@Stomp",
+            "line": 4
+          },
+          {
+            "name": "@GR",
+            "line": 4
+          },
+          {
+            "name": "@AddOnCancel",
+            "line": 4
+          },
+          {
+            "name": "@AQ3",
+            "line": 1
+          },
+          {
+            "name": "@DCN",
+            "line": 4
+          },
+          {
+            "name": "@Klondike",
+            "line": 4
+          },
+          {
+            "name": "@MPP",
+            "line": 1
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 67047,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedExecutionContext.before(Scenario)"
+            }
+          }
+        ],
+        "description": "",
+        "name": "Cancel an AddOn on DCN Gen-3",
+        "keyword": "Scenario Outline",
+        "line": 106,
+        "steps": [
+          {
+            "result": {
+              "duration": 7110959144,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"ZuulContract.json\",\"absoluteFilePath\":\"artefacts/9_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"NewBookingResponse.json\",\"absoluteFilePath\":\"artefacts/10_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "As a \"Sales Person\" I create a Booking in Stomp using ZuulProduct Template \"store/zuulContracts/[MPP] DCN Gen-3.json\"",
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sales Person",
+                  "offset": 6
+                },
+                {
+                  "val": "ZuulProduct",
+                  "offset": 54
+                },
+                {
+                  "val": "store/zuulContracts/[MPP] DCN Gen-3.json",
+                  "offset": 76
+                }
+              ],
+              "location": "AddOnSteps.I_create_a_Booking_in_Stomp_using_FaradProduct_Template(String,String,String)"
+            },
+            "output": [
+              "{\"message\":\"Successfully uploaded drop file\",\"productSymbol\":\"STOMP166457\",\"status\":\"200\"}"
+            ],
+            "matchedColumns": [
+              0
+            ]
+          },
+          {
+            "result": {
+              "duration": 4964768497,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Product_1686099Pv1.json\",\"absoluteFilePath\":\"artefacts/11_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "I want to Book a new Trade on this Product I fill following values:",
+            "keyword": "And ",
+            "line": 7,
+            "match": {
+              "location": "AddOnSteps.I_want_to_Book_a_new_Trade_on_this_Product_I_fill_following_values(FieldValuePair\u003e)"
+            },
+            "output": [
+              "Querying Stomp for Product: 1686099Pv1"
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Section",
+                  "Field",
+                  "Value"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "Amend Contract",
+                  "Issue Date",
+                  "\u003dtoday(7)"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "Trade",
+                  "Settlement Date",
+                  "\u003dtoday(7)"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "Contract",
+                  "Final Settlement Date",
+                  "\u003dtoday(7)"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "Trade",
+                  "Trade Date",
+                  "\u003dtoday"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "Allocations",
+                  "Risk Class",
+                  "EBSK_JP"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "Issuance Platform",
+                  "Issuance Platform",
+                  "JP Standalone"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "Quoting Details",
+                  "Issue Amount",
+                  "50000000"
+                ],
+                "line": 15
+              },
+              {
+                "cells": [
+                  "Allocations",
+                  "Notional Amount",
+                  "50000000"
+                ],
+                "line": 16
+              }
+            ]
+          },
+          {
+            "result": {
+              "duration": 706374,
+              "status": "passed"
+            },
+            "name": "In Underlying Fixings table inside Fixings section of Product I enter following values:",
+            "keyword": "And ",
+            "line": 17,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Underlying Fixings",
+                  "offset": 3
+                },
+                {
+                  "val": "Fixings",
+                  "offset": 35
+                },
+                {
+                  "val": "Product",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.In_table_inside_section_of_I_enter_following(String,String,StompEntityType,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Reference Spot Prices",
+                  "Reference Is Final"
+                ],
+                "line": 18
+              },
+              {
+                "cells": [
+                  "23",
+                  "Yes"
+                ],
+                "line": 19
+              },
+              {
+                "cells": [
+                  "33",
+                  "Yes"
+                ],
+                "line": 20
+              }
+            ]
+          },
+          {
+            "result": {
+              "duration": 29835733313,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Product_1686099Pv1.json\",\"absoluteFilePath\":\"artefacts/12_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Product_After_SUBMIT_1686099Pv2.json\",\"absoluteFilePath\":\"artefacts/13_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "I SUBMIT the Product in Stomp and wait for 20 seconds so that all the Stomp downstream systems are in Sync because of STOMP performance issue",
+            "keyword": "And ",
+            "line": 21,
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "SUBMIT",
+                  "offset": 2
+                },
+                {
+                  "val": "Product",
+                  "offset": 13
+                },
+                {
+                  "val": "20",
+                  "offset": 43
+                },
+                {
+                  "val": "so that all the Stomp downstream systems are in Sync because of STOMP performance issue",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.I_the_Product_in_Stomp_and_wait_for_seconds(String,String,StompEntityType,long,String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 4912860853,
+              "status": "failed",
+              "error_message": "java.lang.AssertionError: State of the Trade in Stomp\nExpected: is \"Booked\"\n     but: was \"Being Booked\"\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)\r\n\tat com.ubs.ged.testautomation.cukes.stomp.AddOnSteps.verifyStompEntityState(AddOnSteps.java:228)\r\n\tat com.ubs.ged.testautomation.cukes.stomp.AddOnSteps.In_Stomp_I_see_the_Product_in_state(AddOnSteps.java:69)\r\n\tat com.ubs.ged.testautomation.cukes.stomp.AddOnSteps.In_Stomp_I_see_the_Product_in_and_Trade_in_state(AddOnSteps.java:75)\r\n\tat âœ½.And In Stomp I see the Product in \"Created\" and Trade in \"Booked\" state([AQ3] [MPP] DCN Gen-3 Cancel AddOn.feature:22)\r\n"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Product_1686099Pv2.json\",\"absoluteFilePath\":\"artefacts/14_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Product_StateInStomp.json\",\"absoluteFilePath\":\"artefacts/15_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Trade_641804Tv1.json\",\"absoluteFilePath\":\"artefacts/16_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Trade_StateInStomp.json\",\"absoluteFilePath\":\"artefacts/17_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "In Stomp I see the Product in \"Created\" and Trade in \"Booked\" state",
+            "keyword": "And ",
+            "line": 22,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Created",
+                  "offset": 31
+                },
+                {
+                  "val": "Booked",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.In_Stomp_I_see_the_Product_in_and_Trade_in_state(String,String)"
+            },
+            "output": [
+              "Querying Stomp for Product: 1686099Pv2",
+              "Querying Stomp for Trade: 641804Tv1"
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I wait for 60 seconds so that all the Klondike downstream systems are in Sync",
+            "keyword": "And ",
+            "line": 23,
+            "match": {
+              "arguments": [
+                {
+                  "val": "60",
+                  "offset": 11
+                },
+                {
+                  "val": "so that all the Klondike downstream systems are in Sync",
+                  "offset": 22
+                }
+              ],
+              "location": "GenericSteps.I_wait_for_seconds(long,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Klondike I see the Product in Live status with 12 Tickets in Processed state",
+            "keyword": "And ",
+            "line": 24,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Live",
+                  "offset": 33
+                },
+                {
+                  "val": "12",
+                  "offset": 50
+                },
+                {
+                  "val": "Processed",
+                  "offset": 64
+                }
+              ],
+              "location": "KlondikeSteps.In_Klondike_I_see_the_Product_in_Live_status_with_Tickets_in_state(String,int,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I want to Book a new AddOn on this Product I fill following values:",
+            "keyword": "And ",
+            "line": 25,
+            "match": {
+              "location": "AddOnSteps.I_want_to_Book_a_new_AddOn_on_this_Product_I_fill_following_values(FieldValuePair\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Section",
+                  "Field",
+                  "Value"
+                ],
+                "line": 26
+              },
+              {
+                "cells": [
+                  "Trade",
+                  "Trade Date",
+                  "\u003dtoday"
+                ],
+                "line": 27
+              },
+              {
+                "cells": [
+                  "Allocations",
+                  "Percentage Price",
+                  "0.90"
+                ],
+                "line": 28
+              },
+              {
+                "cells": [
+                  "Allocations",
+                  "Notional Amount",
+                  "4000000"
+                ],
+                "line": 29
+              },
+              {
+                "cells": [
+                  "Quoting Details",
+                  "Upfront Retrocession Rate",
+                  "0.10"
+                ],
+                "line": 30
+              }
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Underlying Fixings table inside Trade section of Trade I enter following values:",
+            "keyword": "And ",
+            "line": 31,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Underlying Fixings",
+                  "offset": 3
+                },
+                {
+                  "val": "Trade",
+                  "offset": 35
+                },
+                {
+                  "val": "Trade",
+                  "offset": 52
+                }
+              ],
+              "location": "AddOnSteps.In_table_inside_section_of_I_enter_following(String,String,StompEntityType,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Reference Spot Prices"
+                ],
+                "line": 32
+              },
+              {
+                "cells": [
+                  "55"
+                ],
+                "line": 33
+              },
+              {
+                "cells": [
+                  "77"
+                ],
+                "line": 34
+              }
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I SUBMIT the Trade in Stomp and wait for 20 seconds so that all the Stomp downstream systems are in sync",
+            "keyword": "And ",
+            "line": 35,
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "SUBMIT",
+                  "offset": 2
+                },
+                {
+                  "val": "Trade",
+                  "offset": 13
+                },
+                {
+                  "val": "20",
+                  "offset": 41
+                },
+                {
+                  "val": "so that all the Stomp downstream systems are in sync",
+                  "offset": 52
+                }
+              ],
+              "location": "AddOnSteps.I_the_Product_in_Stomp_and_wait_for_seconds(String,String,StompEntityType,long,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Stomp I see the Product in \"Created\" and Trade in \"Booked\" state",
+            "keyword": "And ",
+            "line": 36,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Created",
+                  "offset": 31
+                },
+                {
+                  "val": "Booked",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.In_Stomp_I_see_the_Product_in_and_Trade_in_state(String,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Stomp I see 1st AddOn Trade in \"Booked\" state",
+            "keyword": "And ",
+            "line": 37,
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 15
+                },
+                {
+                  "val": "Booked",
+                  "offset": 35
+                }
+              ],
+              "location": "AddOnSteps.In_Stomp_I_see_st_AddOn_Trade_in_state(int,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I wait for 60 seconds so that all the Klondike downstream systems are in Sync",
+            "keyword": "And ",
+            "line": 38,
+            "match": {
+              "arguments": [
+                {
+                  "val": "60",
+                  "offset": 11
+                },
+                {
+                  "val": "so that all the Klondike downstream systems are in Sync",
+                  "offset": 22
+                }
+              ],
+              "location": "GenericSteps.I_wait_for_seconds(long,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Klondike I see the Product in Live status with 24 Tickets in Processed state",
+            "keyword": "And ",
+            "line": 39,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Live",
+                  "offset": 33
+                },
+                {
+                  "val": "24",
+                  "offset": 50
+                },
+                {
+                  "val": "Processed",
+                  "offset": 64
+                }
+              ],
+              "location": "KlondikeSteps.In_Klondike_I_see_the_Product_in_Live_status_with_Tickets_in_state(String,int,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Klondike I see the Product in Live status and with:",
+            "keyword": "And ",
+            "line": 40,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Live",
+                  "offset": 33
+                }
+              ],
+              "location": "KlondikeSteps.In_Klondike_I_see_the_Product_in_status_and_with(String,FieldValuePair\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Field",
+                  "Value"
+                ],
+                "line": 41
+              },
+              {
+                "cells": [
+                  "issueAmount",
+                  "5.4E7"
+                ],
+                "line": 42
+              }
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I CANCEL the 1st AddOn Trade in Stomp and wait for 20 seconds so that all the Stomp downstream systems are in sync",
+            "keyword": "When ",
+            "line": 45,
+            "match": {
+              "arguments": [
+                {
+                  "val": "CANCEL",
+                  "offset": 2
+                },
+                {
+                  "val": "1",
+                  "offset": 13
+                },
+                {
+                  "val": "20",
+                  "offset": 51
+                },
+                {
+                  "val": "so that all the Stomp downstream systems are in sync",
+                  "offset": 62
+                }
+              ],
+              "location": "AddOnSteps.I_the_st_AddOn_Trade_in_Stomp_and_wait_for_seconds(String,int,long,String)"
+            },
+            "comments": [
+              {
+                "value": "# issueAmount 5.4E7 \u003d 54M",
+                "line": 43
+              }
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Stomp I see the Product in \"Created\" and Trade in \"Booked\" state",
+            "keyword": "Then ",
+            "line": 46,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Created",
+                  "offset": 31
+                },
+                {
+                  "val": "Booked",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.In_Stomp_I_see_the_Product_in_and_Trade_in_state(String,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Stomp I see 1st AddOn Trade in \"Cancelled\" state",
+            "keyword": "And ",
+            "line": 47,
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 15
+                },
+                {
+                  "val": "Cancelled",
+                  "offset": 35
+                }
+              ],
+              "location": "AddOnSteps.In_Stomp_I_see_st_AddOn_Trade_in_state(int,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I wait for 60 seconds so that all the Klondike downstream systems are in Sync",
+            "keyword": "And ",
+            "line": 49,
+            "match": {
+              "arguments": [
+                {
+                  "val": "60",
+                  "offset": 11
+                },
+                {
+                  "val": "so that all the Klondike downstream systems are in Sync",
+                  "offset": 22
+                }
+              ],
+              "location": "GenericSteps.I_wait_for_seconds(long,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Klondike I see the Product in Live status and with:",
+            "keyword": "Then ",
+            "line": 50,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Live",
+                  "offset": 33
+                }
+              ],
+              "location": "KlondikeSteps.In_Klondike_I_see_the_Product_in_status_and_with(String,FieldValuePair\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Field",
+                  "Value"
+                ],
+                "line": 51
+              },
+              {
+                "cells": [
+                  "issueAmount",
+                  "5.0E7"
+                ],
+                "line": 52
+              }
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Klondike I see 33 Tickets and I group them by events",
+            "keyword": "And ",
+            "line": 54,
+            "match": {
+              "arguments": [
+                {
+                  "val": "33",
+                  "offset": 18
+                }
+              ],
+              "location": "KlondikeSteps.In_Klondike_I_see_Tickets_and_I_group_them_by_events(int)"
+            },
+            "comments": [
+              {
+                "value": "# issueAmount 5.0E7 \u003d 50M",
+                "line": 53
+              }
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I see following Tickets grouped under \"Primary Zuul Gozer Note Trade Ticket\":",
+            "keyword": "And ",
+            "line": 55,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Primary Zuul Gozer Note Trade Ticket",
+                  "offset": 39
+                }
+              ],
+              "location": "KlondikeSteps.I_see_following_Tickets_grouped_under_(String,ExpectedTicket\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "TicketType",
+                  "SubTicketType",
+                  "Source",
+                  "State"
+                ],
+                "line": 56
+              },
+              {
+                "cells": [
+                  "PrimaryZuulGozerNoteTradeTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 57
+              },
+              {
+                "cells": [
+                  "IssuanceTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 58
+              },
+              {
+                "cells": [
+                  "TriggerRebuildTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 59
+              },
+              {
+                "cells": [
+                  "SecuritisedTradeTicketNF",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 60
+              },
+              {
+                "cells": [
+                  "EventStoreTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 61
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Primary Zuul Gozer Note Trade Ticket",
+                  "",
+                  "Processed"
+                ],
+                "line": 62
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Issuance Ticket",
+                  "",
+                  "Processed"
+                ],
+                "line": 63
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Securitised Trade Ticket N F",
+                  "",
+                  "Processed"
+                ],
+                "line": 64
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "ProductCreationWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 65
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "TradeTicketWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 66
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "SecuritisationWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 67
+              },
+              {
+                "cells": [
+                  "BrainTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 68
+              }
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I see following Tickets grouped under \"Zuul Primary Add On Trade Ticket after 1st Add On\":",
+            "keyword": "And ",
+            "line": 69,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Zuul Primary Add On Trade Ticket after 1st Add On",
+                  "offset": 39
+                }
+              ],
+              "location": "KlondikeSteps.I_see_following_Tickets_grouped_under_(String,ExpectedTicket\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "TicketType",
+                  "SubTicketType",
+                  "Source",
+                  "State"
+                ],
+                "line": 70
+              },
+              {
+                "cells": [
+                  "ZuulPrimaryAddOnTradeTicket",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 71
+              },
+              {
+                "cells": [
+                  "AmendTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 72
+              },
+              {
+                "cells": [
+                  "SecuritisedTradeTicketNF",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 73
+              },
+              {
+                "cells": [
+                  "IssuanceTicket",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 74
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "AmendTicketWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 75
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Securitised Trade Ticket N F",
+                  "",
+                  "Processed"
+                ],
+                "line": 76
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "TradeTicketWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 77
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Issuance Ticket",
+                  "",
+                  "Processed"
+                ],
+                "line": 78
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "SecuritisationWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 79
+              },
+              {
+                "cells": [
+                  "BrainTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 80
+              },
+              {
+                "cells": [
+                  "EventStoreTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 81
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Amend Ticket",
+                  "",
+                  "Processed"
+                ],
+                "line": 82
+              }
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I see following Tickets grouped under \"Amend Ticket\":",
+            "keyword": "And ",
+            "line": 83,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Amend Ticket",
+                  "offset": 39
+                }
+              ],
+              "location": "KlondikeSteps.I_see_following_Tickets_grouped_under_(String,ExpectedTicket\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "TicketType",
+                  "SubTicketType",
+                  "Source",
+                  "State"
+                ],
+                "line": 84
+              },
+              {
+                "cells": [
+                  "AmendTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 85
+              },
+              {
+                "cells": [
+                  "EventStoreTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 86
+              },
+              {
+                "cells": [
+                  "BrainTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 87
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "AmendTicketWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 88
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "TicketCancelTicketWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 89
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "TicketCancelTicketWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 90
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Ticket Cancel Ticket",
+                  "",
+                  "Processed"
+                ],
+                "line": 91
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Amend Ticket",
+                  "",
+                  "Processed"
+                ],
+                "line": 92
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Ticket Cancel Ticket",
+                  "",
+                  "Processed"
+                ],
+                "line": 93
+              }
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I wait for 180 seconds so that GR EPS Instrument Cache is updated",
+            "keyword": "And ",
+            "line": 95,
+            "match": {
+              "arguments": [
+                {
+                  "val": "180",
+                  "offset": 11
+                },
+                {
+                  "val": "so that GR EPS Instrument Cache is updated",
+                  "offset": 23
+                }
+              ],
+              "location": "GenericSteps.I_wait_for_seconds(long,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In GR APAC I see a updated Instrument",
+            "keyword": "Then ",
+            "line": 96,
+            "match": {
+              "arguments": [
+                {
+                  "val": "APAC",
+                  "offset": 6
+                }
+              ],
+              "location": "GRSteps.In_GR_I_see_a_new_Instrument(String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In GR I see 1 Live Tallies for Risk Class \"EBSK_JP\"",
+            "keyword": "And ",
+            "line": 97,
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 12
+                },
+                {
+                  "val": "Live",
+                  "offset": 14
+                },
+                {
+                  "val": "EBSK_JP",
+                  "offset": 43
+                }
+              ],
+              "location": "GRSteps.In_GR_I_see_Live_Or_Cancelled_Tallies_for_Risk_Class(int,String,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In GR I see 1 Live Tallies for Risk Class \"WARRISS\"",
+            "keyword": "And ",
+            "line": 98,
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 12
+                },
+                {
+                  "val": "Live",
+                  "offset": 14
+                },
+                {
+                  "val": "WARRISS",
+                  "offset": 43
+                }
+              ],
+              "location": "GRSteps.In_GR_I_see_Live_Or_Cancelled_Tallies_for_Risk_Class(int,String,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In GR I see 2 Cancelled Tallies for Risk Class \"EBSK_JP\"",
+            "keyword": "And ",
+            "line": 99,
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 12
+                },
+                {
+                  "val": "Cancelled",
+                  "offset": 14
+                },
+                {
+                  "val": "EBSK_JP",
+                  "offset": 48
+                }
+              ],
+              "location": "GRSteps.In_GR_I_see_Live_Or_Cancelled_Tallies_for_Risk_Class(int,String,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In GR I see 2 Cancelled Tallies for Risk Class \"WARRISS\"",
+            "keyword": "And ",
+            "line": 100,
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 12
+                },
+                {
+                  "val": "Cancelled",
+                  "offset": 14
+                },
+                {
+                  "val": "WARRISS",
+                  "offset": 48
+                }
+              ],
+              "location": "GRSteps.In_GR_I_see_Live_Or_Cancelled_Tallies_for_Risk_Class(int,String,String)"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "[AQ3] [MPP] DCN Gen-3 Cancel AddOn.feature"
+  },
+  {
+    "id": "cancellation-of-dcn-gen-3-for-apac",
+    "tags": [
+      {
+        "name": "@AQ3",
+        "line": 1
+      },
+      {
+        "name": "@MPP",
+        "line": 1
+      }
+    ],
+    "description": "",
+    "name": "Cancellation of DCN Gen-3 for APAC",
+    "keyword": "Feature",
+    "line": 2,
+    "elements": [
+      {
+        "id": "cancellation-of-dcn-gen-3-for-apac;cancel-dcn-gen-3-for-apac;;2",
+        "tags": [
+          {
+            "name": "@Gen-3",
+            "line": 4
+          },
+          {
+            "name": "@Stomp",
+            "line": 4
+          },
+          {
+            "name": "@GR",
+            "line": 4
+          },
+          {
+            "name": "@AQ3",
+            "line": 1
+          },
+          {
+            "name": "@DCN",
+            "line": 4
+          },
+          {
+            "name": "@Klondike",
+            "line": 4
+          },
+          {
+            "name": "@MPP",
+            "line": 1
+          },
+          {
+            "name": "@Cancel",
+            "line": 4
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 65860,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedExecutionContext.before(Scenario)"
+            }
+          }
+        ],
+        "description": "",
+        "name": "Cancel DCN Gen-3 for APAC",
+        "keyword": "Scenario Outline",
+        "line": 62,
+        "steps": [
+          {
+            "result": {
+              "duration": 11590805745,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"FaradProductTemplate.json\",\"absoluteFilePath\":\"artefacts/18_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"NewBookingResponse.json\",\"absoluteFilePath\":\"artefacts/19_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "As a \"Sales Person\" I create a Booking in Stomp using FaradProduct Template \"store/faradProductTemplates/[AQ3] DCN Gen-3.json\"",
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sales Person",
+                  "offset": 6
+                },
+                {
+                  "val": "FaradProduct",
+                  "offset": 54
+                },
+                {
+                  "val": "store/faradProductTemplates/[AQ3] DCN Gen-3.json",
+                  "offset": 77
+                }
+              ],
+              "location": "AddOnSteps.I_create_a_Booking_in_Stomp_using_FaradProduct_Template(String,String,String)"
+            },
+            "output": [
+              "{\"message\":\"Successfully uploaded drop file\",\"productSymbol\":\"STOMP166462\",\"status\":\"200\"}"
+            ],
+            "matchedColumns": [
+              0
+            ]
+          },
+          {
+            "result": {
+              "duration": 5872007546,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Product_1686114Pv1.json\",\"absoluteFilePath\":\"artefacts/20_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "I want to Book a new Trade on this Product I fill following values:",
+            "keyword": "Then ",
+            "line": 7,
+            "match": {
+              "location": "AddOnSteps.I_want_to_Book_a_new_Trade_on_this_Product_I_fill_following_values(FieldValuePair\u003e)"
+            },
+            "output": [
+              "Querying Stomp for Product: 1686114Pv1"
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Section",
+                  "Field",
+                  "Value"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "Amend Contract",
+                  "Issue Date",
+                  "\u003dtoday(7)"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "Trade",
+                  "Settlement Date",
+                  "\u003dtoday(7)"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "Contract",
+                  "Final Settlement Date",
+                  "\u003dtoday(7)"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "Trade",
+                  "Trade Date",
+                  "\u003dtoday"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "Allocations",
+                  "Risk Class",
+                  "EBSK_JP"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "Issuance Platform",
+                  "Issuance Platform",
+                  "JP Standalone"
+                ],
+                "line": 14
+              }
+            ]
+          },
+          {
+            "result": {
+              "duration": 755683,
+              "status": "passed"
+            },
+            "name": "In Underlying Fixings table inside Fixings section of Product I enter following values:",
+            "keyword": "And ",
+            "line": 15,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Underlying Fixings",
+                  "offset": 3
+                },
+                {
+                  "val": "Fixings",
+                  "offset": 35
+                },
+                {
+                  "val": "Product",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.In_table_inside_section_of_I_enter_following(String,String,StompEntityType,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Reference Spot Prices",
+                  "Reference Is Final"
+                ],
+                "line": 16
+              },
+              {
+                "cells": [
+                  "23",
+                  "Yes"
+                ],
+                "line": 17
+              },
+              {
+                "cells": [
+                  "33",
+                  "Yes"
+                ],
+                "line": 18
+              }
+            ]
+          },
+          {
+            "result": {
+              "duration": 32869997723,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Product_1686114Pv1.json\",\"absoluteFilePath\":\"artefacts/21_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Product_After_SUBMIT_1686114Pv2.json\",\"absoluteFilePath\":\"artefacts/22_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "I SUBMIT the Product in Stomp and wait for 20 seconds so that all the Stomp downstream systems are in sync",
+            "keyword": "And ",
+            "line": 19,
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "SUBMIT",
+                  "offset": 2
+                },
+                {
+                  "val": "Product",
+                  "offset": 13
+                },
+                {
+                  "val": "20",
+                  "offset": 43
+                },
+                {
+                  "val": "so that all the Stomp downstream systems are in sync",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.I_the_Product_in_Stomp_and_wait_for_seconds(String,String,StompEntityType,long,String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 8874105997,
+              "status": "failed",
+              "error_message": "java.lang.AssertionError: State of the Trade in Stomp\nExpected: is \"Booked\"\n     but: was \"Being Booked\"\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)\r\n\tat com.ubs.ged.testautomation.cukes.stomp.AddOnSteps.verifyStompEntityState(AddOnSteps.java:228)\r\n\tat com.ubs.ged.testautomation.cukes.stomp.AddOnSteps.In_Stomp_I_see_the_Product_in_state(AddOnSteps.java:69)\r\n\tat com.ubs.ged.testautomation.cukes.stomp.AddOnSteps.In_Stomp_I_see_the_Product_in_and_Trade_in_state(AddOnSteps.java:75)\r\n\tat âœ½.Then In Stomp I see the Product in \"Created\" and Trade in \"Booked\" state([AQ3] [MPP] DCN Gen-3 Cancel.feature:20)\r\n"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Product_1686114Pv2.json\",\"absoluteFilePath\":\"artefacts/23_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Product_StateInStomp.json\",\"absoluteFilePath\":\"artefacts/24_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Trade_641807Tv2.json\",\"absoluteFilePath\":\"artefacts/25_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Trade_StateInStomp.json\",\"absoluteFilePath\":\"artefacts/26_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "In Stomp I see the Product in \"Created\" and Trade in \"Booked\" state",
+            "keyword": "Then ",
+            "line": 20,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Created",
+                  "offset": 31
+                },
+                {
+                  "val": "Booked",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.In_Stomp_I_see_the_Product_in_and_Trade_in_state(String,String)"
+            },
+            "output": [
+              "Querying Stomp for Product: 1686114Pv2",
+              "Querying Stomp for Trade: 641807Tv2"
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I wait for 60 seconds so that all the Klondike downstream systems are in Sync",
+            "keyword": "And ",
+            "line": 21,
+            "match": {
+              "arguments": [
+                {
+                  "val": "60",
+                  "offset": 11
+                },
+                {
+                  "val": "so that all the Klondike downstream systems are in Sync",
+                  "offset": 22
+                }
+              ],
+              "location": "GenericSteps.I_wait_for_seconds(long,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Klondike I see the Product in Live status with 12 Tickets in Processed state",
+            "keyword": "Then ",
+            "line": 22,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Live",
+                  "offset": 33
+                },
+                {
+                  "val": "12",
+                  "offset": 50
+                },
+                {
+                  "val": "Processed",
+                  "offset": 64
+                }
+              ],
+              "location": "KlondikeSteps.In_Klondike_I_see_the_Product_in_Live_status_with_Tickets_in_state(String,int,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Stomp I see the Product in \"Created\" and Trade in \"Booked\" state",
+            "keyword": "When ",
+            "line": 24,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Created",
+                  "offset": 31
+                },
+                {
+                  "val": "Booked",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.In_Stomp_I_see_the_Product_in_and_Trade_in_state(String,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I CANCEL the Trade in Stomp and wait for 20 seconds so that all the Stomp downstream systems are in sync",
+            "keyword": "And ",
+            "line": 25,
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "CANCEL",
+                  "offset": 2
+                },
+                {
+                  "val": "Trade",
+                  "offset": 13
+                },
+                {
+                  "val": "20",
+                  "offset": 41
+                },
+                {
+                  "val": "so that all the Stomp downstream systems are in sync",
+                  "offset": 52
+                }
+              ],
+              "location": "AddOnSteps.I_the_Product_in_Stomp_and_wait_for_seconds(String,String,StompEntityType,long,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Stomp I see the Product in \"Created\" and Trade in \"Cancelled\" state",
+            "keyword": "Then ",
+            "line": 27,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Created",
+                  "offset": 31
+                },
+                {
+                  "val": "Cancelled",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.In_Stomp_I_see_the_Product_in_and_Trade_in_state(String,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I wait for 60 seconds so that all the Klondike downstream systems are in Sync",
+            "keyword": "And ",
+            "line": 28,
+            "match": {
+              "arguments": [
+                {
+                  "val": "60",
+                  "offset": 11
+                },
+                {
+                  "val": "so that all the Klondike downstream systems are in Sync",
+                  "offset": 22
+                }
+              ],
+              "location": "GenericSteps.I_wait_for_seconds(long,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Klondike I see the Product in Cancelled status",
+            "keyword": "And ",
+            "line": 29,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cancelled",
+                  "offset": 33
+                }
+              ],
+              "location": "KlondikeSteps.In_Klondike_I_see_the_Product_in_status(String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Klondike I see 18 Tickets and I group them by events",
+            "keyword": "And ",
+            "line": 30,
+            "match": {
+              "arguments": [
+                {
+                  "val": "18",
+                  "offset": 18
+                }
+              ],
+              "location": "KlondikeSteps.In_Klondike_I_see_Tickets_and_I_group_them_by_events(int)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I see following Tickets grouped under \"Primary Zuul Gozer Note Trade Ticket\":",
+            "keyword": "And ",
+            "line": 31,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Primary Zuul Gozer Note Trade Ticket",
+                  "offset": 39
+                }
+              ],
+              "location": "KlondikeSteps.I_see_following_Tickets_grouped_under_(String,ExpectedTicket\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "TicketType",
+                  "SubTicketType",
+                  "Source",
+                  "State"
+                ],
+                "line": 32
+              },
+              {
+                "cells": [
+                  "PrimaryZuulGozerNoteTradeTicket",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 33
+              },
+              {
+                "cells": [
+                  "IssuanceTicket",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 34
+              },
+              {
+                "cells": [
+                  "TriggerRebuildTicket",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 35
+              },
+              {
+                "cells": [
+                  "SecuritisedTradeTicketNF",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 36
+              },
+              {
+                "cells": [
+                  "EventStoreTicket",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 37
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Primary Zuul Gozer Note Trade Ticket",
+                  "",
+                  "Processed"
+                ],
+                "line": 38
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Issuance Ticket",
+                  "",
+                  "Processed"
+                ],
+                "line": 39
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Securitised Trade Ticket N F",
+                  "",
+                  "Processed"
+                ],
+                "line": 40
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "ProductCreationWorkflowAgent",
+                  "Cancelled"
+                ],
+                "line": 41
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "TradeTicketWorkflowAgent",
+                  "Cancelled"
+                ],
+                "line": 42
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "SecuritisationWorkflowAgent",
+                  "Cancelled"
+                ],
+                "line": 43
+              },
+              {
+                "cells": [
+                  "BrainTicket",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 44
+              }
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I see following Tickets grouped under \"Cancel Product\":",
+            "keyword": "And ",
+            "line": 45,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cancel Product",
+                  "offset": 39
+                }
+              ],
+              "location": "KlondikeSteps.I_see_following_Tickets_grouped_under_(String,ExpectedTicket\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "TicketType",
+                  "SubTicketType",
+                  "Source",
+                  "State"
+                ],
+                "line": 46
+              },
+              {
+                "cells": [
+                  "CancelProductTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 47
+              },
+              {
+                "cells": [
+                  "CancelAllTriggersTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 48
+              },
+              {
+                "cells": [
+                  "EventStoreTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 49
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 50
+              },
+              {
+                "cells": [
+                  "BrainTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 51
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 52
+              }
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I wait for 180 seconds so that GR EPS Instrument Cache is updated",
+            "keyword": "And ",
+            "line": 54,
+            "match": {
+              "arguments": [
+                {
+                  "val": "180",
+                  "offset": 11
+                },
+                {
+                  "val": "so that GR EPS Instrument Cache is updated",
+                  "offset": 23
+                }
+              ],
+              "location": "GenericSteps.I_wait_for_seconds(long,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In GR APAC I see a updated Instrument",
+            "keyword": "Then ",
+            "line": 55,
+            "match": {
+              "arguments": [
+                {
+                  "val": "APAC",
+                  "offset": 6
+                }
+              ],
+              "location": "GRSteps.In_GR_I_see_a_new_Instrument(String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In GR I see 2 Cancelled Tallies for Risk Class \"EBSK_JP\"",
+            "keyword": "And ",
+            "line": 56,
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 12
+                },
+                {
+                  "val": "Cancelled",
+                  "offset": 14
+                },
+                {
+                  "val": "EBSK_JP",
+                  "offset": 48
+                }
+              ],
+              "location": "GRSteps.In_GR_I_see_Live_Or_Cancelled_Tallies_for_Risk_Class(int,String,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In GR I see 2 Cancelled Tallies for Risk Class \"WARRISS\"",
+            "keyword": "And ",
+            "line": 57,
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 12
+                },
+                {
+                  "val": "Cancelled",
+                  "offset": 14
+                },
+                {
+                  "val": "WARRISS",
+                  "offset": 48
+                }
+              ],
+              "location": "GRSteps.In_GR_I_see_Live_Or_Cancelled_Tallies_for_Risk_Class(int,String,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In GR I see 0 Live Tallies",
+            "keyword": "And ",
+            "line": 58,
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 12
+                },
+                {
+                  "val": "Live",
+                  "offset": 14
+                }
+              ],
+              "location": "GRSteps.In_GR_I_see_Live_Or_Cancelled_Tallies(int,String)"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "cancellation-of-dcn-gen-3-for-apac;cancel-dcn-gen-3-for-apac;;3",
+        "tags": [
+          {
+            "name": "@Gen-3",
+            "line": 4
+          },
+          {
+            "name": "@Stomp",
+            "line": 4
+          },
+          {
+            "name": "@GR",
+            "line": 4
+          },
+          {
+            "name": "@AQ3",
+            "line": 1
+          },
+          {
+            "name": "@DCN",
+            "line": 4
+          },
+          {
+            "name": "@Klondike",
+            "line": 4
+          },
+          {
+            "name": "@MPP",
+            "line": 1
+          },
+          {
+            "name": "@Cancel",
+            "line": 4
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 82901,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedExecutionContext.before(Scenario)"
+            }
+          }
+        ],
+        "description": "",
+        "name": "Cancel DCN Gen-3 for APAC",
+        "keyword": "Scenario Outline",
+        "line": 63,
+        "steps": [
+          {
+            "result": {
+              "duration": 8765840980,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"ZuulContract.json\",\"absoluteFilePath\":\"artefacts/27_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"NewBookingResponse.json\",\"absoluteFilePath\":\"artefacts/28_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "As a \"Sales Person\" I create a Booking in Stomp using ZuulProduct Template \"store/zuulContracts/[MPP] DCN Gen-3.json\"",
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sales Person",
+                  "offset": 6
+                },
+                {
+                  "val": "ZuulProduct",
+                  "offset": 54
+                },
+                {
+                  "val": "store/zuulContracts/[MPP] DCN Gen-3.json",
+                  "offset": 76
+                }
+              ],
+              "location": "AddOnSteps.I_create_a_Booking_in_Stomp_using_FaradProduct_Template(String,String,String)"
+            },
+            "output": [
+              "{\"message\":\"Successfully uploaded drop file\",\"productSymbol\":\"STOMP166466\",\"status\":\"200\"}"
+            ],
+            "matchedColumns": [
+              0
+            ]
+          },
+          {
+            "result": {
+              "duration": 1029713972,
+              "status": "failed",
+              "error_message": "java.lang.NullPointerException\r\n\tat com.ubs.ged.testautomation.stomp.domain.BookingIdentifiers.create(BookingIdentifiers.java:38)\r\n\tat com.ubs.ged.testautomation.stomp.StompOrderServices.findBookingInStomp(StompOrderServices.java:53)\r\n\tat com.ubs.ged.testautomation.cukes.stomp.AddOnSteps.latestBookingIdentifiers(AddOnSteps.java:207)\r\n\tat com.ubs.ged.testautomation.cukes.stomp.AddOnSteps.In_Stomp_I_see_the_Product_in_state(AddOnSteps.java:67)\r\n\tat com.ubs.ged.testautomation.cukes.stomp.AddOnSteps.setTheProductInCurrentContextIfNotQueriedButStompContractIsCreatedByZuulorMpp(AddOnSteps.java:273)\r\n\tat com.ubs.ged.testautomation.cukes.stomp.AddOnSteps.I_want_to_Book_a_new_Trade_on_this_Product_I_fill_following_values(AddOnSteps.java:80)\r\n\tat âœ½.Then I want to Book a new Trade on this Product I fill following values:([AQ3] [MPP] DCN Gen-3 Cancel.feature:7)\r\n"
+            },
+            "name": "I want to Book a new Trade on this Product I fill following values:",
+            "keyword": "Then ",
+            "line": 7,
+            "match": {
+              "location": "AddOnSteps.I_want_to_Book_a_new_Trade_on_this_Product_I_fill_following_values(FieldValuePair\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Section",
+                  "Field",
+                  "Value"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "Amend Contract",
+                  "Issue Date",
+                  "\u003dtoday(7)"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "Trade",
+                  "Settlement Date",
+                  "\u003dtoday(7)"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "Contract",
+                  "Final Settlement Date",
+                  "\u003dtoday(7)"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "Trade",
+                  "Trade Date",
+                  "\u003dtoday"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "Allocations",
+                  "Risk Class",
+                  "EBSK_JP"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "Issuance Platform",
+                  "Issuance Platform",
+                  "JP Standalone"
+                ],
+                "line": 14
+              }
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Underlying Fixings table inside Fixings section of Product I enter following values:",
+            "keyword": "And ",
+            "line": 15,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Underlying Fixings",
+                  "offset": 3
+                },
+                {
+                  "val": "Fixings",
+                  "offset": 35
+                },
+                {
+                  "val": "Product",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.In_table_inside_section_of_I_enter_following(String,String,StompEntityType,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Reference Spot Prices",
+                  "Reference Is Final"
+                ],
+                "line": 16
+              },
+              {
+                "cells": [
+                  "23",
+                  "Yes"
+                ],
+                "line": 17
+              },
+              {
+                "cells": [
+                  "33",
+                  "Yes"
+                ],
+                "line": 18
+              }
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I SUBMIT the Product in Stomp and wait for 20 seconds so that all the Stomp downstream systems are in sync",
+            "keyword": "And ",
+            "line": 19,
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "SUBMIT",
+                  "offset": 2
+                },
+                {
+                  "val": "Product",
+                  "offset": 13
+                },
+                {
+                  "val": "20",
+                  "offset": 43
+                },
+                {
+                  "val": "so that all the Stomp downstream systems are in sync",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.I_the_Product_in_Stomp_and_wait_for_seconds(String,String,StompEntityType,long,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Stomp I see the Product in \"Created\" and Trade in \"Booked\" state",
+            "keyword": "Then ",
+            "line": 20,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Created",
+                  "offset": 31
+                },
+                {
+                  "val": "Booked",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.In_Stomp_I_see_the_Product_in_and_Trade_in_state(String,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I wait for 60 seconds so that all the Klondike downstream systems are in Sync",
+            "keyword": "And ",
+            "line": 21,
+            "match": {
+              "arguments": [
+                {
+                  "val": "60",
+                  "offset": 11
+                },
+                {
+                  "val": "so that all the Klondike downstream systems are in Sync",
+                  "offset": 22
+                }
+              ],
+              "location": "GenericSteps.I_wait_for_seconds(long,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Klondike I see the Product in Live status with 12 Tickets in Processed state",
+            "keyword": "Then ",
+            "line": 22,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Live",
+                  "offset": 33
+                },
+                {
+                  "val": "12",
+                  "offset": 50
+                },
+                {
+                  "val": "Processed",
+                  "offset": 64
+                }
+              ],
+              "location": "KlondikeSteps.In_Klondike_I_see_the_Product_in_Live_status_with_Tickets_in_state(String,int,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Stomp I see the Product in \"Created\" and Trade in \"Booked\" state",
+            "keyword": "When ",
+            "line": 24,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Created",
+                  "offset": 31
+                },
+                {
+                  "val": "Booked",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.In_Stomp_I_see_the_Product_in_and_Trade_in_state(String,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I CANCEL the Trade in Stomp and wait for 20 seconds so that all the Stomp downstream systems are in sync",
+            "keyword": "And ",
+            "line": 25,
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "CANCEL",
+                  "offset": 2
+                },
+                {
+                  "val": "Trade",
+                  "offset": 13
+                },
+                {
+                  "val": "20",
+                  "offset": 41
+                },
+                {
+                  "val": "so that all the Stomp downstream systems are in sync",
+                  "offset": 52
+                }
+              ],
+              "location": "AddOnSteps.I_the_Product_in_Stomp_and_wait_for_seconds(String,String,StompEntityType,long,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Stomp I see the Product in \"Created\" and Trade in \"Cancelled\" state",
+            "keyword": "Then ",
+            "line": 27,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Created",
+                  "offset": 31
+                },
+                {
+                  "val": "Cancelled",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.In_Stomp_I_see_the_Product_in_and_Trade_in_state(String,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I wait for 60 seconds so that all the Klondike downstream systems are in Sync",
+            "keyword": "And ",
+            "line": 28,
+            "match": {
+              "arguments": [
+                {
+                  "val": "60",
+                  "offset": 11
+                },
+                {
+                  "val": "so that all the Klondike downstream systems are in Sync",
+                  "offset": 22
+                }
+              ],
+              "location": "GenericSteps.I_wait_for_seconds(long,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Klondike I see the Product in Cancelled status",
+            "keyword": "And ",
+            "line": 29,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cancelled",
+                  "offset": 33
+                }
+              ],
+              "location": "KlondikeSteps.In_Klondike_I_see_the_Product_in_status(String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Klondike I see 18 Tickets and I group them by events",
+            "keyword": "And ",
+            "line": 30,
+            "match": {
+              "arguments": [
+                {
+                  "val": "18",
+                  "offset": 18
+                }
+              ],
+              "location": "KlondikeSteps.In_Klondike_I_see_Tickets_and_I_group_them_by_events(int)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I see following Tickets grouped under \"Primary Zuul Gozer Note Trade Ticket\":",
+            "keyword": "And ",
+            "line": 31,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Primary Zuul Gozer Note Trade Ticket",
+                  "offset": 39
+                }
+              ],
+              "location": "KlondikeSteps.I_see_following_Tickets_grouped_under_(String,ExpectedTicket\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "TicketType",
+                  "SubTicketType",
+                  "Source",
+                  "State"
+                ],
+                "line": 32
+              },
+              {
+                "cells": [
+                  "PrimaryZuulGozerNoteTradeTicket",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 33
+              },
+              {
+                "cells": [
+                  "IssuanceTicket",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 34
+              },
+              {
+                "cells": [
+                  "TriggerRebuildTicket",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 35
+              },
+              {
+                "cells": [
+                  "SecuritisedTradeTicketNF",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 36
+              },
+              {
+                "cells": [
+                  "EventStoreTicket",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 37
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Primary Zuul Gozer Note Trade Ticket",
+                  "",
+                  "Processed"
+                ],
+                "line": 38
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Issuance Ticket",
+                  "",
+                  "Processed"
+                ],
+                "line": 39
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Securitised Trade Ticket N F",
+                  "",
+                  "Processed"
+                ],
+                "line": 40
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "ProductCreationWorkflowAgent",
+                  "Cancelled"
+                ],
+                "line": 41
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "TradeTicketWorkflowAgent",
+                  "Cancelled"
+                ],
+                "line": 42
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "SecuritisationWorkflowAgent",
+                  "Cancelled"
+                ],
+                "line": 43
+              },
+              {
+                "cells": [
+                  "BrainTicket",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 44
+              }
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I see following Tickets grouped under \"Cancel Product\":",
+            "keyword": "And ",
+            "line": 45,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cancel Product",
+                  "offset": 39
+                }
+              ],
+              "location": "KlondikeSteps.I_see_following_Tickets_grouped_under_(String,ExpectedTicket\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "TicketType",
+                  "SubTicketType",
+                  "Source",
+                  "State"
+                ],
+                "line": 46
+              },
+              {
+                "cells": [
+                  "CancelProductTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 47
+              },
+              {
+                "cells": [
+                  "CancelAllTriggersTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 48
+              },
+              {
+                "cells": [
+                  "EventStoreTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 49
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 50
+              },
+              {
+                "cells": [
+                  "BrainTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 51
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 52
+              }
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I wait for 180 seconds so that GR EPS Instrument Cache is updated",
+            "keyword": "And ",
+            "line": 54,
+            "match": {
+              "arguments": [
+                {
+                  "val": "180",
+                  "offset": 11
+                },
+                {
+                  "val": "so that GR EPS Instrument Cache is updated",
+                  "offset": 23
+                }
+              ],
+              "location": "GenericSteps.I_wait_for_seconds(long,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In GR APAC I see a updated Instrument",
+            "keyword": "Then ",
+            "line": 55,
+            "match": {
+              "arguments": [
+                {
+                  "val": "APAC",
+                  "offset": 6
+                }
+              ],
+              "location": "GRSteps.In_GR_I_see_a_new_Instrument(String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In GR I see 2 Cancelled Tallies for Risk Class \"EBSK_JP\"",
+            "keyword": "And ",
+            "line": 56,
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 12
+                },
+                {
+                  "val": "Cancelled",
+                  "offset": 14
+                },
+                {
+                  "val": "EBSK_JP",
+                  "offset": 48
+                }
+              ],
+              "location": "GRSteps.In_GR_I_see_Live_Or_Cancelled_Tallies_for_Risk_Class(int,String,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In GR I see 2 Cancelled Tallies for Risk Class \"WARRISS\"",
+            "keyword": "And ",
+            "line": 57,
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 12
+                },
+                {
+                  "val": "Cancelled",
+                  "offset": 14
+                },
+                {
+                  "val": "WARRISS",
+                  "offset": 48
+                }
+              ],
+              "location": "GRSteps.In_GR_I_see_Live_Or_Cancelled_Tallies_for_Risk_Class(int,String,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In GR I see 0 Live Tallies",
+            "keyword": "And ",
+            "line": 58,
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 12
+                },
+                {
+                  "val": "Live",
+                  "offset": 14
+                }
+              ],
+              "location": "GRSteps.In_GR_I_see_Live_Or_Cancelled_Tallies(int,String)"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "[AQ3] [MPP] DCN Gen-3 Cancel.feature"
+  },
+  {
+    "id": "cancellation-of-mpp-erwokig-gen-3-for-emea",
+    "tags": [
+      {
+        "name": "@MPP",
+        "line": 1
+      }
+    ],
+    "description": "",
+    "name": "Cancellation of MPP ERWOKIG Gen-3 for EMEA",
+    "keyword": "Feature",
+    "line": 2,
+    "elements": [
+      {
+        "id": "cancellation-of-mpp-erwokig-gen-3-for-emea;cancel-erwokig-gen-3-for-emea",
+        "tags": [
+          {
+            "name": "@Gen-3",
+            "line": 4
+          },
+          {
+            "name": "@ERWOKIG",
+            "line": 4
+          },
+          {
+            "name": "@Stomp",
+            "line": 4
+          },
+          {
+            "name": "@Klondike",
+            "line": 4
+          },
+          {
+            "name": "@GR",
+            "line": 4
+          },
+          {
+            "name": "@Cancel",
+            "line": 4
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 63275,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedExecutionContext.before(Scenario)"
+            }
+          }
+        ],
+        "description": "",
+        "name": "Cancel ERWOKIG Gen-3 for EMEA",
+        "keyword": "Scenario",
+        "line": 5,
+        "steps": [
+          {
+            "result": {
+              "duration": 6864875564,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"ZuulContract.json\",\"absoluteFilePath\":\"artefacts/29_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"NewBookingResponse.json\",\"absoluteFilePath\":\"artefacts/30_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "As a \"Sales Person\" I create a Booking in Stomp using ZuulProduct Template \"store/zuulContracts/[MPP] ERWOKIG Gen-3.json\"",
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sales Person",
+                  "offset": 6
+                },
+                {
+                  "val": "ZuulProduct",
+                  "offset": 54
+                },
+                {
+                  "val": "store/zuulContracts/[MPP] ERWOKIG Gen-3.json",
+                  "offset": 76
+                }
+              ],
+              "location": "AddOnSteps.I_create_a_Booking_in_Stomp_using_FaradProduct_Template(String,String,String)"
+            },
+            "output": [
+              "{\"message\":\"Successfully uploaded drop file\",\"productSymbol\":\"STOMP166467\",\"status\":\"200\"}"
+            ]
+          },
+          {
+            "result": {
+              "duration": 5585810557,
+              "status": "failed",
+              "error_message": "java.lang.NullPointerException\r\n\tat com.ubs.ged.testautomation.stomp.domain.BookingIdentifiers.create(BookingIdentifiers.java:38)\r\n\tat com.ubs.ged.testautomation.stomp.StompOrderServices.findBookingInStomp(StompOrderServices.java:53)\r\n\tat com.ubs.ged.testautomation.cukes.stomp.AddOnSteps.latestBookingIdentifiers(AddOnSteps.java:207)\r\n\tat com.ubs.ged.testautomation.cukes.stomp.AddOnSteps.In_Stomp_I_see_the_Product_in_state(AddOnSteps.java:67)\r\n\tat com.ubs.ged.testautomation.cukes.stomp.AddOnSteps.setTheProductInCurrentContextIfNotQueriedButStompContractIsCreatedByZuulorMpp(AddOnSteps.java:273)\r\n\tat com.ubs.ged.testautomation.cukes.stomp.AddOnSteps.I_want_to_Book_a_new_Trade_on_this_Product_I_fill_following_values(AddOnSteps.java:80)\r\n\tat âœ½.Then I want to Book a new Trade on this Product I fill following values:([MPP] ERWOKIG Gen-3 Cancel.feature:7)\r\n"
+            },
+            "name": "I want to Book a new Trade on this Product I fill following values:",
+            "keyword": "Then ",
+            "line": 7,
+            "match": {
+              "location": "AddOnSteps.I_want_to_Book_a_new_Trade_on_this_Product_I_fill_following_values(FieldValuePair\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Section",
+                  "Field",
+                  "Value"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "Securitisation",
+                  "Subscription Launch Date",
+                  "\u003dtoday"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "Securitisation",
+                  "First Trading Date",
+                  "\u003dtoday"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "Amend Contract",
+                  "Issue Date",
+                  "\u003dtoday(7)"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "Trade",
+                  "Settlement Date",
+                  "\u003dtoday(7)"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "Trade",
+                  "Trade Date",
+                  "\u003dtoday"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "Allocations",
+                  "Risk Class",
+                  "E_EUROPE"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "Issuance Platform",
+                  "Issuance Platform",
+                  "CH Standalone"
+                ],
+                "line": 15
+              }
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Underlying Fixings table inside Fixings section of Product I enter following values:",
+            "keyword": "And ",
+            "line": 17,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Underlying Fixings",
+                  "offset": 3
+                },
+                {
+                  "val": "Fixings",
+                  "offset": 35
+                },
+                {
+                  "val": "Product",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.In_table_inside_section_of_I_enter_following(String,String,StompEntityType,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Reference Spot Prices",
+                  "Reference Is Final"
+                ],
+                "line": 18
+              },
+              {
+                "cells": [
+                  "23",
+                  "Yes"
+                ],
+                "line": 19
+              },
+              {
+                "cells": [
+                  "77",
+                  "Yes"
+                ],
+                "line": 20
+              }
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I SUBMIT the Product in Stomp and wait for 20 seconds so that all the Stomp downstream systems are in sync",
+            "keyword": "And ",
+            "line": 21,
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "SUBMIT",
+                  "offset": 2
+                },
+                {
+                  "val": "Product",
+                  "offset": 13
+                },
+                {
+                  "val": "20",
+                  "offset": 43
+                },
+                {
+                  "val": "so that all the Stomp downstream systems are in sync",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.I_the_Product_in_Stomp_and_wait_for_seconds(String,String,StompEntityType,long,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Stomp I see the Product in \"Created\" and Trade in \"Booked\" state",
+            "keyword": "Then ",
+            "line": 22,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Created",
+                  "offset": 31
+                },
+                {
+                  "val": "Booked",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.In_Stomp_I_see_the_Product_in_and_Trade_in_state(String,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I wait for 60 seconds so that all the Klondike downstream systems are in Sync",
+            "keyword": "And ",
+            "line": 24,
+            "match": {
+              "arguments": [
+                {
+                  "val": "60",
+                  "offset": 11
+                },
+                {
+                  "val": "so that all the Klondike downstream systems are in Sync",
+                  "offset": 22
+                }
+              ],
+              "location": "GenericSteps.I_wait_for_seconds(long,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Klondike I see the Product in Live status with 16 Tickets in Processed state",
+            "keyword": "Then ",
+            "line": 25,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Live",
+                  "offset": 33
+                },
+                {
+                  "val": "16",
+                  "offset": 50
+                },
+                {
+                  "val": "Processed",
+                  "offset": 64
+                }
+              ],
+              "location": "KlondikeSteps.In_Klondike_I_see_the_Product_in_Live_status_with_Tickets_in_state(String,int,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Stomp I see the Product in \"Created\" and Trade in \"Booked\" state",
+            "keyword": "When ",
+            "line": 27,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Created",
+                  "offset": 31
+                },
+                {
+                  "val": "Booked",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.In_Stomp_I_see_the_Product_in_and_Trade_in_state(String,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I CANCEL the Trade in Stomp and wait for 20 seconds so that all the Stomp downstream systems are in sync",
+            "keyword": "And ",
+            "line": 28,
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "CANCEL",
+                  "offset": 2
+                },
+                {
+                  "val": "Trade",
+                  "offset": 13
+                },
+                {
+                  "val": "20",
+                  "offset": 41
+                },
+                {
+                  "val": "so that all the Stomp downstream systems are in sync",
+                  "offset": 52
+                }
+              ],
+              "location": "AddOnSteps.I_the_Product_in_Stomp_and_wait_for_seconds(String,String,StompEntityType,long,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Stomp I see the Product in \"Created\" and Trade in \"Cancelled\" state",
+            "keyword": "Then ",
+            "line": 30,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Created",
+                  "offset": 31
+                },
+                {
+                  "val": "Cancelled",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.In_Stomp_I_see_the_Product_in_and_Trade_in_state(String,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I wait for 60 seconds so that all the Klondike downstream systems are in Sync",
+            "keyword": "And ",
+            "line": 31,
+            "match": {
+              "arguments": [
+                {
+                  "val": "60",
+                  "offset": 11
+                },
+                {
+                  "val": "so that all the Klondike downstream systems are in Sync",
+                  "offset": 22
+                }
+              ],
+              "location": "GenericSteps.I_wait_for_seconds(long,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Klondike I see the Product in Cancelled status",
+            "keyword": "And ",
+            "line": 32,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cancelled",
+                  "offset": 33
+                }
+              ],
+              "location": "KlondikeSteps.In_Klondike_I_see_the_Product_in_status(String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Klondike I see 24 Tickets and I group them by events",
+            "keyword": "And ",
+            "line": 33,
+            "match": {
+              "arguments": [
+                {
+                  "val": "24",
+                  "offset": 18
+                }
+              ],
+              "location": "KlondikeSteps.In_Klondike_I_see_Tickets_and_I_group_them_by_events(int)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I see following Tickets grouped under \"Primary Zuul Gozer Note Trade Ticket\":",
+            "keyword": "And ",
+            "line": 34,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Primary Zuul Gozer Note Trade Ticket",
+                  "offset": 39
+                }
+              ],
+              "location": "KlondikeSteps.I_see_following_Tickets_grouped_under_(String,ExpectedTicket\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "TicketType",
+                  "SubTicketType",
+                  "Source",
+                  "State"
+                ],
+                "line": 35
+              },
+              {
+                "cells": [
+                  "PrimaryZuulGozerNoteTradeTicket",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 36
+              },
+              {
+                "cells": [
+                  "IssuanceTicket",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 37
+              },
+              {
+                "cells": [
+                  "TriggerRebuildTicket",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 38
+              },
+              {
+                "cells": [
+                  "SecuritisedTradeTicketNF",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 39
+              },
+              {
+                "cells": [
+                  "EventStoreTicket",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 40
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Primary Zuul Gozer Note Trade Ticket",
+                  "",
+                  "Processed"
+                ],
+                "line": 41
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Issuance Ticket",
+                  "",
+                  "Processed"
+                ],
+                "line": 42
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Securitised Trade Ticket N F",
+                  "",
+                  "Processed"
+                ],
+                "line": 43
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "ProductCreationWorkflowAgent",
+                  "Cancelled"
+                ],
+                "line": 44
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "TradeTicketWorkflowAgent",
+                  "Cancelled"
+                ],
+                "line": 45
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "SecuritisationWorkflowAgent",
+                  "Cancelled"
+                ],
+                "line": 46
+              },
+              {
+                "cells": [
+                  "GenerateTermsheetTicket",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 47
+              },
+              {
+                "cells": [
+                  "CpssFeedTicket",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 48
+              },
+              {
+                "cells": [
+                  "CpssUpdateTicket",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 49
+              },
+              {
+                "cells": [
+                  "ColtFeedTicket",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 50
+              },
+              {
+                "cells": [
+                  "ColtFeedTicket",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 51
+              }
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I see following Tickets grouped under \"Cancel Product\":",
+            "keyword": "And ",
+            "line": 52,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cancel Product",
+                  "offset": 39
+                }
+              ],
+              "location": "KlondikeSteps.I_see_following_Tickets_grouped_under_(String,ExpectedTicket\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "TicketType",
+                  "SubTicketType",
+                  "Source",
+                  "State"
+                ],
+                "line": 53
+              },
+              {
+                "cells": [
+                  "CancelProductTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 54
+              },
+              {
+                "cells": [
+                  "CancelAllTriggersTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 55
+              },
+              {
+                "cells": [
+                  "EventStoreTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 56
+              },
+              {
+                "cells": [
+                  "ColtFeedTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 57
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 58
+              },
+              {
+                "cells": [
+                  "ColtFeedTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 59
+              },
+              {
+                "cells": [
+                  "CpssFeedTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 60
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 61
+              }
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I wait for 180 seconds so that GR EPS Instrument Cache is updated",
+            "keyword": "And ",
+            "line": 63,
+            "match": {
+              "arguments": [
+                {
+                  "val": "180",
+                  "offset": 11
+                },
+                {
+                  "val": "so that GR EPS Instrument Cache is updated",
+                  "offset": 23
+                }
+              ],
+              "location": "GenericSteps.I_wait_for_seconds(long,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In GR EMEA I see a new Instrument",
+            "keyword": "And ",
+            "line": 64,
+            "match": {
+              "arguments": [
+                {
+                  "val": "EMEA",
+                  "offset": 6
+                }
+              ],
+              "location": "GRSteps.In_GR_I_see_a_new_Instrument(String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In GR I see 6 Cancelled Tallies for Risk Class \"E_EUROPE\"",
+            "keyword": "And ",
+            "line": 65,
+            "match": {
+              "arguments": [
+                {
+                  "val": "6",
+                  "offset": 12
+                },
+                {
+                  "val": "Cancelled",
+                  "offset": 14
+                },
+                {
+                  "val": "E_EUROPE",
+                  "offset": 48
+                }
+              ],
+              "location": "GRSteps.In_GR_I_see_Live_Or_Cancelled_Tallies_for_Risk_Class(int,String,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In GR I see 0 Live Tallies",
+            "keyword": "And ",
+            "line": 66,
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 12
+                },
+                {
+                  "val": "Live",
+                  "offset": 14
+                }
+              ],
+              "location": "GRSteps.In_GR_I_see_Live_Or_Cancelled_Tallies(int,String)"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "[MPP] ERWOKIG Gen-3 Cancel.feature"
+  },
+  {
+    "id": "cancellation-of-mpp-pac-gen-3-for-us",
+    "tags": [
+      {
+        "name": "@MPP",
+        "line": 1
+      },
+      {
+        "name": "@Upload_documents",
+        "line": 1
+      }
+    ],
+    "description": "",
+    "name": "Cancellation of MPP PAC Gen-3 for US",
+    "keyword": "Feature",
+    "line": 2,
+    "elements": [
+      {
+        "id": "cancellation-of-mpp-pac-gen-3-for-us;cancel-pac-gen-3-for-us",
+        "tags": [
+          {
+            "name": "@Gen-3",
+            "line": 4
+          },
+          {
+            "name": "@PAC",
+            "line": 4
+          },
+          {
+            "name": "@Stomp",
+            "line": 4
+          },
+          {
+            "name": "@Klondike",
+            "line": 4
+          },
+          {
+            "name": "@GR",
+            "line": 4
+          },
+          {
+            "name": "@Cancel",
+            "line": 4
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 63626,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedExecutionContext.before(Scenario)"
+            }
+          }
+        ],
+        "description": "",
+        "name": "Cancel PAC Gen-3 for US",
+        "keyword": "Scenario",
+        "line": 5,
+        "steps": [
+          {
+            "result": {
+              "duration": 7186852100,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"ZuulContract.json\",\"absoluteFilePath\":\"artefacts/31_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"NewBookingResponse.json\",\"absoluteFilePath\":\"artefacts/32_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "As a \"Sales Person\" I create a Booking in Stomp using ZuulProduct Template \"store/zuulContracts/[MPP] PAC Gen-3.json\"",
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sales Person",
+                  "offset": 6
+                },
+                {
+                  "val": "ZuulProduct",
+                  "offset": 54
+                },
+                {
+                  "val": "store/zuulContracts/[MPP] PAC Gen-3.json",
+                  "offset": 76
+                }
+              ],
+              "location": "AddOnSteps.I_create_a_Booking_in_Stomp_using_FaradProduct_Template(String,String,String)"
+            },
+            "output": [
+              "{\"message\":\"Successfully uploaded drop file\",\"productSymbol\":\"STOMP166468\",\"status\":\"200\"}"
+            ]
+          },
+          {
+            "result": {
+              "duration": 93463554,
+              "status": "failed",
+              "error_message": "java.lang.NullPointerException\r\n\tat com.ubs.ged.testautomation.stomp.domain.BookingIdentifiers.create(BookingIdentifiers.java:38)\r\n\tat com.ubs.ged.testautomation.stomp.StompOrderServices.findBookingInStomp(StompOrderServices.java:53)\r\n\tat com.ubs.ged.testautomation.cukes.stomp.AddOnSteps.latestBookingIdentifiers(AddOnSteps.java:207)\r\n\tat com.ubs.ged.testautomation.cukes.stomp.AddOnSteps.In_Stomp_I_see_the_Product_in_state(AddOnSteps.java:67)\r\n\tat com.ubs.ged.testautomation.cukes.stomp.AddOnSteps.setTheProductInCurrentContextIfNotQueriedButStompContractIsCreatedByZuulorMpp(AddOnSteps.java:273)\r\n\tat com.ubs.ged.testautomation.cukes.stomp.AddOnSteps.I_want_to_Book_a_new_Trade_on_this_Product_I_fill_following_values(AddOnSteps.java:80)\r\n\tat âœ½.Then I want to Book a new Trade on this Product I fill following values:([MPP] PAC Gen-3 Cancel.feature:7)\r\n"
+            },
+            "name": "I want to Book a new Trade on this Product I fill following values:",
+            "keyword": "Then ",
+            "line": 7,
+            "match": {
+              "location": "AddOnSteps.I_want_to_Book_a_new_Trade_on_this_Product_I_fill_following_values(FieldValuePair\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Section",
+                  "Field",
+                  "Value"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "Amend Contract",
+                  "Issue Date",
+                  "\u003dtoday(7)"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "Trade",
+                  "Settlement Date",
+                  "\u003dtoday(7)"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "Trade",
+                  "Trade Date",
+                  "\u003dtoday"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "Allocations",
+                  "Risk Class",
+                  "USD-GED"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "Issuance Platform",
+                  "Issuance Platform",
+                  "US Registered"
+                ],
+                "line": 13
+              }
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Underlying Fixings table inside Fixings section of Product I enter following values:",
+            "keyword": "And ",
+            "line": 15,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Underlying Fixings",
+                  "offset": 3
+                },
+                {
+                  "val": "Fixings",
+                  "offset": 35
+                },
+                {
+                  "val": "Product",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.In_table_inside_section_of_I_enter_following(String,String,StompEntityType,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Reference Spot Prices",
+                  "Reference Is Final"
+                ],
+                "line": 16
+              },
+              {
+                "cells": [
+                  "23",
+                  "Yes"
+                ],
+                "line": 17
+              },
+              {
+                "cells": [
+                  "55",
+                  "Yes"
+                ],
+                "line": 18
+              }
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I upload the following documents in Stomp:",
+            "keyword": "And ",
+            "line": 19,
+            "match": {
+              "location": "SharedAndDocumentSteps.I_upload_the_following_documents_in_Stomp(DocumentToUpload\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "DocumentType",
+                  "DocumentSubType",
+                  "Path"
+                ],
+                "line": 20
+              },
+              {
+                "cells": [
+                  "prospectus",
+                  "Indicative free write",
+                  "https://gedtools.swissbank.com/jira/secure/attachment/177531/prospectus.pdf"
+                ],
+                "line": 21
+              },
+              {
+                "cells": [
+                  "certificate",
+                  "None",
+                  "https://gedtools.swissbank.com/jira/secure/attachment/177528/certificate.pdf"
+                ],
+                "line": 22
+              },
+              {
+                "cells": [
+                  "finalTerms",
+                  "None",
+                  "https://gedtools.swissbank.com/jira/secure/attachment/177529/finalTerms.pdf"
+                ],
+                "line": 23
+              },
+              {
+                "cells": [
+                  "globalNote",
+                  "None",
+                  "https://gedtools.swissbank.com/jira/secure/attachment/177530/globalNote.pdf"
+                ],
+                "line": 24
+              }
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I SUBMIT the Product in Stomp and wait for 20 seconds so that all the Stomp downstream systems are in sync",
+            "keyword": "And ",
+            "line": 25,
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "SUBMIT",
+                  "offset": 2
+                },
+                {
+                  "val": "Product",
+                  "offset": 13
+                },
+                {
+                  "val": "20",
+                  "offset": 43
+                },
+                {
+                  "val": "so that all the Stomp downstream systems are in sync",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.I_the_Product_in_Stomp_and_wait_for_seconds(String,String,StompEntityType,long,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Stomp I see the Product in \"Created\" and Trade in \"Booked\" state",
+            "keyword": "Then ",
+            "line": 26,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Created",
+                  "offset": 31
+                },
+                {
+                  "val": "Booked",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.In_Stomp_I_see_the_Product_in_and_Trade_in_state(String,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I wait for 60 seconds so that all the Klondike downstream systems are in Sync",
+            "keyword": "And ",
+            "line": 28,
+            "match": {
+              "arguments": [
+                {
+                  "val": "60",
+                  "offset": 11
+                },
+                {
+                  "val": "so that all the Klondike downstream systems are in Sync",
+                  "offset": 22
+                }
+              ],
+              "location": "GenericSteps.I_wait_for_seconds(long,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Klondike I see the Product in Live status with 17 Tickets in Processed state",
+            "keyword": "Then ",
+            "line": 29,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Live",
+                  "offset": 33
+                },
+                {
+                  "val": "17",
+                  "offset": 50
+                },
+                {
+                  "val": "Processed",
+                  "offset": 64
+                }
+              ],
+              "location": "KlondikeSteps.In_Klondike_I_see_the_Product_in_Live_status_with_Tickets_in_state(String,int,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Stomp I see the Product in \"Created\" and Trade in \"Booked\" state",
+            "keyword": "When ",
+            "line": 31,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Created",
+                  "offset": 31
+                },
+                {
+                  "val": "Booked",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.In_Stomp_I_see_the_Product_in_and_Trade_in_state(String,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I CANCEL the Trade in Stomp and wait for 20 seconds so that all the Stomp downstream systems are in sync",
+            "keyword": "And ",
+            "line": 32,
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "CANCEL",
+                  "offset": 2
+                },
+                {
+                  "val": "Trade",
+                  "offset": 13
+                },
+                {
+                  "val": "20",
+                  "offset": 41
+                },
+                {
+                  "val": "so that all the Stomp downstream systems are in sync",
+                  "offset": 52
+                }
+              ],
+              "location": "AddOnSteps.I_the_Product_in_Stomp_and_wait_for_seconds(String,String,StompEntityType,long,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Stomp I see the Product in \"Created\" and Trade in \"Cancelled\" state",
+            "keyword": "Then ",
+            "line": 34,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Created",
+                  "offset": 31
+                },
+                {
+                  "val": "Cancelled",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.In_Stomp_I_see_the_Product_in_and_Trade_in_state(String,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I wait for 60 seconds so that all the Klondike downstream systems are in Sync",
+            "keyword": "And ",
+            "line": 35,
+            "match": {
+              "arguments": [
+                {
+                  "val": "60",
+                  "offset": 11
+                },
+                {
+                  "val": "so that all the Klondike downstream systems are in Sync",
+                  "offset": 22
+                }
+              ],
+              "location": "GenericSteps.I_wait_for_seconds(long,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Klondike I see the Product in Cancelled status",
+            "keyword": "And ",
+            "line": 36,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cancelled",
+                  "offset": 33
+                }
+              ],
+              "location": "KlondikeSteps.In_Klondike_I_see_the_Product_in_status(String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In Klondike I see 27 Tickets and I group them by events",
+            "keyword": "And ",
+            "line": 37,
+            "match": {
+              "arguments": [
+                {
+                  "val": "27",
+                  "offset": 18
+                }
+              ],
+              "location": "KlondikeSteps.In_Klondike_I_see_Tickets_and_I_group_them_by_events(int)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I see following Tickets grouped under \"Primary Zuul Gozer Note Trade Ticket\":",
+            "keyword": "And ",
+            "line": 38,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Primary Zuul Gozer Note Trade Ticket",
+                  "offset": 39
+                }
+              ],
+              "location": "KlondikeSteps.I_see_following_Tickets_grouped_under_(String,ExpectedTicket\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "TicketType",
+                  "SubTicketType",
+                  "Source",
+                  "State"
+                ],
+                "line": 39
+              },
+              {
+                "cells": [
+                  "PrimaryZuulGozerNoteTradeTicket",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 40
+              },
+              {
+                "cells": [
+                  "SecuritisedTradeTicketNF",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 41
+              },
+              {
+                "cells": [
+                  "EventStoreTicket",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 42
+              },
+              {
+                "cells": [
+                  "TriggerRebuildTicket",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 43
+              },
+              {
+                "cells": [
+                  "GenerateTermsheetTicket",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 44
+              },
+              {
+                "cells": [
+                  "IssuanceTicket",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 45
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "ProductCreationWorkflowAgent",
+                  "Cancelled"
+                ],
+                "line": 46
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "SecuritisationWorkflowAgent",
+                  "Cancelled"
+                ],
+                "line": 47
+              },
+              {
+                "cells": [
+                  "ColtFeedTicket",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 48
+              },
+              {
+                "cells": [
+                  "ColtFeedTicket",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 49
+              },
+              {
+                "cells": [
+                  "ColtFeedTicket",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 50
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "TradeTicketWorkflowAgent",
+                  "Cancelled"
+                ],
+                "line": 51
+              },
+              {
+                "cells": [
+                  "ColtFeedTicket",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 52
+              },
+              {
+                "cells": [
+                  "CpssFeedTicket",
+                  "",
+                  "",
+                  "Cancelled"
+                ],
+                "line": 53
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Primary Zuul Gozer Note Trade Ticket",
+                  "",
+                  "Processed"
+                ],
+                "line": 54
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Issuance Ticket",
+                  "",
+                  "Processed"
+                ],
+                "line": 55
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Securitised Trade Ticket N F",
+                  "",
+                  "Processed"
+                ],
+                "line": 56
+              }
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I see following Tickets grouped under \"Cancel Product\":",
+            "keyword": "And ",
+            "line": 57,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cancel Product",
+                  "offset": 39
+                }
+              ],
+              "location": "KlondikeSteps.I_see_following_Tickets_grouped_under_(String,ExpectedTicket\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "TicketType",
+                  "SubTicketType",
+                  "Source",
+                  "State"
+                ],
+                "line": 58
+              },
+              {
+                "cells": [
+                  "CancelProductTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 59
+              },
+              {
+                "cells": [
+                  "CancelAllTriggersTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 60
+              },
+              {
+                "cells": [
+                  "EventStoreTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 61
+              },
+              {
+                "cells": [
+                  "ColtFeedTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 62
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 63
+              },
+              {
+                "cells": [
+                  "ColtFeedTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 64
+              },
+              {
+                "cells": [
+                  "CpssFeedTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 65
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 66
+              },
+              {
+                "cells": [
+                  "ColtFeedTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 67
+              },
+              {
+                "cells": [
+                  "ColtFeedTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 68
+              }
+            ]
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I wait for 180 seconds so that GR EPS Instrument Cache is updated",
+            "keyword": "And ",
+            "line": 70,
+            "match": {
+              "arguments": [
+                {
+                  "val": "180",
+                  "offset": 11
+                },
+                {
+                  "val": "so that GR EPS Instrument Cache is updated",
+                  "offset": 23
+                }
+              ],
+              "location": "GenericSteps.I_wait_for_seconds(long,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In GR US I see a new Instrument",
+            "keyword": "And ",
+            "line": 71,
+            "match": {
+              "arguments": [
+                {
+                  "val": "US",
+                  "offset": 6
+                }
+              ],
+              "location": "GRSteps.In_GR_I_see_a_new_Instrument(String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In GR I see 6 Cancelled Tallies for Risk Class \"USD-GED\"",
+            "keyword": "And ",
+            "line": 72,
+            "match": {
+              "arguments": [
+                {
+                  "val": "6",
+                  "offset": 12
+                },
+                {
+                  "val": "Cancelled",
+                  "offset": 14
+                },
+                {
+                  "val": "USD-GED",
+                  "offset": 48
+                }
+              ],
+              "location": "GRSteps.In_GR_I_see_Live_Or_Cancelled_Tallies_for_Risk_Class(int,String,String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "In GR I see 0 Live Tallies",
+            "keyword": "And ",
+            "line": 73,
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 12
+                },
+                {
+                  "val": "Live",
+                  "offset": 14
+                }
+              ],
+              "location": "GRSteps.In_GR_I_see_Live_Or_Cancelled_Tallies(int,String)"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "[MPP] PAC Gen-3 Cancel.feature"
+  }
+]
