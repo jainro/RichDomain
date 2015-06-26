@@ -1,0 +1,4242 @@
+
+[
+  {
+    "id": "amend-of-mpp-dcn-gen-2",
+    "tags": [
+      {
+        "name": "@MPP",
+        "line": 1
+      }
+    ],
+    "description": "",
+    "name": "Amend of MPP DCN Gen-2",
+    "keyword": "Feature",
+    "line": 2,
+    "elements": [
+      {
+        "id": "amend-of-mpp-dcn-gen-2;amend-dcn-gen-2-change-the-fixings-for-3382.t-and-changing-the-risk-class",
+        "tags": [
+          {
+            "name": "@Gen-2",
+            "line": 4
+          },
+          {
+            "name": "@DCN",
+            "line": 4
+          },
+          {
+            "name": "@Stomp",
+            "line": 4
+          },
+          {
+            "name": "@Klondike",
+            "line": 4
+          },
+          {
+            "name": "@GR",
+            "line": 4
+          },
+          {
+            "name": "@Amend",
+            "line": 4
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 126392706,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedExecutionContext.before(Scenario)"
+            }
+          }
+        ],
+        "description": "",
+        "name": "Amend DCN Gen-2 change the fixings for 3382.T and changing the Risk class",
+        "keyword": "Scenario",
+        "line": 5,
+        "steps": [
+          {
+            "result": {
+              "duration": 8086992608,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"FaradProductTemplate.json\",\"absoluteFilePath\":\"artefacts/0_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"NewBookingResponse.json\",\"absoluteFilePath\":\"artefacts/1_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "As a \"Sales Person\" I create a Booking in Stomp using FaradProduct Template \"store/faradProductTemplates/[MPP] DCN Gen-2.json\"",
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sales Person",
+                  "offset": 6
+                },
+                {
+                  "val": "FaradProduct",
+                  "offset": 54
+                },
+                {
+                  "val": "store/faradProductTemplates/[MPP] DCN Gen-2.json",
+                  "offset": 77
+                }
+              ],
+              "location": "AddOnSteps.I_create_a_Booking_in_Stomp_using_FaradProduct_Template(String,String,String)"
+            },
+            "output": [
+              "{\"message\":\"Successfully uploaded drop file\",\"productSymbol\":\"STOMP165287\",\"status\":\"200\"}"
+            ]
+          },
+          {
+            "result": {
+              "duration": 786389070,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Product_1681934Pv1.json\",\"absoluteFilePath\":\"artefacts/2_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "I want to Book a new Trade on this Product I fill following values:",
+            "keyword": "Then ",
+            "line": 7,
+            "match": {
+              "location": "AddOnSteps.I_want_to_Book_a_new_Trade_on_this_Product_I_fill_following_values(FieldValuePair\u003e)"
+            },
+            "output": [
+              "Querying Stomp for Product: 1681934Pv1"
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Section",
+                  "Field",
+                  "Value"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "Contract",
+                  "Issue Date",
+                  "\u003dtoday(7)"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "Trade",
+                  "Settlement Date",
+                  "\u003dtoday(7)"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "Contract Extension",
+                  "Payment Date",
+                  "\u003dtoday(7)"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "Trade",
+                  "Trade Date",
+                  "\u003dtoday"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "Allocations",
+                  "Risk Class",
+                  "HK_EXOTICS"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "Issuance Platform",
+                  "Issuance Platform",
+                  "JP Standalone"
+                ],
+                "line": 14
+              }
+            ]
+          },
+          {
+            "result": {
+              "duration": 4885381,
+              "status": "passed"
+            },
+            "name": "In Underlying Fixings table inside Fixings section of Product I enter following values:",
+            "keyword": "And ",
+            "line": 16,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Underlying Fixings",
+                  "offset": 3
+                },
+                {
+                  "val": "Fixings",
+                  "offset": 35
+                },
+                {
+                  "val": "Product",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.In_table_inside_section_of_I_enter_following(String,String,StompEntityType,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Reference Spot Prices",
+                  "Reference Is Final"
+                ],
+                "line": 17
+              },
+              {
+                "cells": [
+                  "23",
+                  "Yes"
+                ],
+                "line": 18
+              }
+            ]
+          },
+          {
+            "result": {
+              "duration": 21805859689,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Product_1681934Pv1.json\",\"absoluteFilePath\":\"artefacts/3_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Product_After_SUBMIT_1681934Pv2.json\",\"absoluteFilePath\":\"artefacts/4_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "I SUBMIT the Product in Stomp and wait for 20 seconds so that all the Stomp downstream systems are in sync",
+            "keyword": "And ",
+            "line": 19,
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "SUBMIT",
+                  "offset": 2
+                },
+                {
+                  "val": "Product",
+                  "offset": 13
+                },
+                {
+                  "val": "20",
+                  "offset": 43
+                },
+                {
+                  "val": "so that all the Stomp downstream systems are in sync",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.I_the_Product_in_Stomp_and_wait_for_seconds(String,String,StompEntityType,long,String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 796531354,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Product_1681934Pv3.json\",\"absoluteFilePath\":\"artefacts/5_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Product_StateInStomp.json\",\"absoluteFilePath\":\"artefacts/6_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Trade_640120Tv2.json\",\"absoluteFilePath\":\"artefacts/7_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Trade_StateInStomp.json\",\"absoluteFilePath\":\"artefacts/8_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "In Stomp I see the Product in \"Created\" and Trade in \"Booked\" state",
+            "keyword": "Then ",
+            "line": 20,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Created",
+                  "offset": 31
+                },
+                {
+                  "val": "Booked",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.In_Stomp_I_see_the_Product_in_and_Trade_in_state(String,String)"
+            },
+            "output": [
+              "Querying Stomp for Product: 1681934Pv3",
+              "Querying Stomp for Trade: 640120Tv2"
+            ]
+          },
+          {
+            "result": {
+              "duration": 60000850497,
+              "status": "passed"
+            },
+            "name": "I wait for 60 seconds so that all the Klondike downstream systems are in Sync",
+            "keyword": "And ",
+            "line": 21,
+            "match": {
+              "arguments": [
+                {
+                  "val": "60",
+                  "offset": 11
+                },
+                {
+                  "val": "so that all the Klondike downstream systems are in Sync",
+                  "offset": 22
+                }
+              ],
+              "location": "GenericSteps.I_wait_for_seconds(long,String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 252992645,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"ProductInKlondike.json\",\"absoluteFilePath\":\"artefacts/9_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"TicketsInKlondike.json\",\"absoluteFilePath\":\"artefacts/10_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "In Klondike I see the Product in Live status with 12 Tickets in Processed state",
+            "keyword": "Then ",
+            "line": 22,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Live",
+                  "offset": 33
+                },
+                {
+                  "val": "12",
+                  "offset": 50
+                },
+                {
+                  "val": "Processed",
+                  "offset": 64
+                }
+              ],
+              "location": "KlondikeSteps.In_Klondike_I_see_the_Product_in_Live_status_with_Tickets_in_state(String,int,String)"
+            },
+            "output": [
+              "Querying Klondike using productStoreReference: 1681934P",
+              "{coltId\u003d52VJ, commonCode\u003d998564751, isin\u003dXS9985647510, previousProductStoreVersion\u003d1681934Pv2, productStoreReference\u003d1681934P, productStoreVersion\u003d1681934Pv3, sedol\u003dBX22112, valoren\u003d26126918}"
+            ]
+          },
+          {
+            "result": {
+              "duration": 541503001,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Product_1681934Pv3.json\",\"absoluteFilePath\":\"artefacts/11_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Product_StateInStomp.json\",\"absoluteFilePath\":\"artefacts/12_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Trade_640120Tv2.json\",\"absoluteFilePath\":\"artefacts/13_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Trade_StateInStomp.json\",\"absoluteFilePath\":\"artefacts/14_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "In Stomp I see the Product in \"Created\" and Trade in \"Booked\" state",
+            "keyword": "When ",
+            "line": 24,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Created",
+                  "offset": 31
+                },
+                {
+                  "val": "Booked",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.In_Stomp_I_see_the_Product_in_and_Trade_in_state(String,String)"
+            },
+            "output": [
+              "Querying Stomp for Product: 1681934Pv3",
+              "Querying Stomp for Trade: 640120Tv2"
+            ]
+          },
+          {
+            "result": {
+              "duration": 199492966,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Product_After_AMEND_1681934Pv3.json\",\"absoluteFilePath\":\"artefacts/15_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "I Amend Underlying Fixings table inside Fixings section of Product I enter following:",
+            "keyword": "And ",
+            "line": 25,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Underlying Fixings",
+                  "offset": 8
+                },
+                {
+                  "val": "Fixings",
+                  "offset": 40
+                },
+                {
+                  "val": "Product",
+                  "offset": 59
+                }
+              ],
+              "location": "AddOnSteps.I_Amend_table_inside_section_of_I_enter_following(String,String,StompEntityType,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Reference Spot Prices",
+                  "Reference Is Final"
+                ],
+                "line": 26
+              },
+              {
+                "cells": [
+                  "33",
+                  "Yes"
+                ],
+                "line": 27
+              }
+            ]
+          },
+          {
+            "result": {
+              "duration": 20814536126,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Product_1681934Pv3.json\",\"absoluteFilePath\":\"artefacts/16_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Product_After_AMEND_SUBMIT_1681934Pv4.json\",\"absoluteFilePath\":\"artefacts/17_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "I AMEND_SUBMIT the Product in Stomp and wait for 20 seconds so that all the Stomp downstream systems are in sync",
+            "keyword": "And ",
+            "line": 28,
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "AMEND_SUBMIT",
+                  "offset": 2
+                },
+                {
+                  "val": "Product",
+                  "offset": 19
+                },
+                {
+                  "val": "20",
+                  "offset": 49
+                },
+                {
+                  "val": "so that all the Stomp downstream systems are in sync",
+                  "offset": 60
+                }
+              ],
+              "location": "AddOnSteps.I_the_Product_in_Stomp_and_wait_for_seconds(String,String,StompEntityType,long,String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 605010495,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Product_1681934Pv4.json\",\"absoluteFilePath\":\"artefacts/18_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Product_StateInStomp.json\",\"absoluteFilePath\":\"artefacts/19_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Trade_640120Tv3.json\",\"absoluteFilePath\":\"artefacts/20_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Trade_StateInStomp.json\",\"absoluteFilePath\":\"artefacts/21_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "In Stomp I see the Product in \"Created\" and Trade in \"Booked\" state",
+            "keyword": "Then ",
+            "line": 29,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Created",
+                  "offset": 31
+                },
+                {
+                  "val": "Booked",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.In_Stomp_I_see_the_Product_in_and_Trade_in_state(String,String)"
+            },
+            "output": [
+              "Querying Stomp for Product: 1681934Pv4",
+              "Querying Stomp for Trade: 640120Tv3"
+            ]
+          },
+          {
+            "result": {
+              "duration": 105093996,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Trade_After_AMEND_640120Tv3.json\",\"absoluteFilePath\":\"artefacts/22_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "I want to Amend this Trade with the following values:",
+            "keyword": "When ",
+            "line": 31,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Trade",
+                  "offset": 21
+                }
+              ],
+              "location": "AddOnSteps.I_want_to_Amend_this_with_the_following_values(StompEntityType,FieldValuePair\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Section",
+                  "Field",
+                  "Value"
+                ],
+                "line": 32
+              },
+              {
+                "cells": [
+                  "Allocations",
+                  "Risk Class",
+                  "JAPS"
+                ],
+                "line": 33
+              }
+            ]
+          },
+          {
+            "result": {
+              "duration": 20426274983,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Trade_After_AMEND_SUBMIT_640120Tv4.json\",\"absoluteFilePath\":\"artefacts/23_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "I AMEND_SUBMIT the Trade in Stomp and wait for 20 seconds so that all the Stomp downstream systems are in sync",
+            "keyword": "And ",
+            "line": 34,
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "AMEND_SUBMIT",
+                  "offset": 2
+                },
+                {
+                  "val": "Trade",
+                  "offset": 19
+                },
+                {
+                  "val": "20",
+                  "offset": 47
+                },
+                {
+                  "val": "so that all the Stomp downstream systems are in sync",
+                  "offset": 58
+                }
+              ],
+              "location": "AddOnSteps.I_the_Product_in_Stomp_and_wait_for_seconds(String,String,StompEntityType,long,String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 656136984,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Product_1681934Pv4.json\",\"absoluteFilePath\":\"artefacts/24_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Product_StateInStomp.json\",\"absoluteFilePath\":\"artefacts/25_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Trade_640120Tv4.json\",\"absoluteFilePath\":\"artefacts/26_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Trade_StateInStomp.json\",\"absoluteFilePath\":\"artefacts/27_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "In Stomp I see the Product in \"Created\" and Trade in \"Booked\" state",
+            "keyword": "Then ",
+            "line": 35,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Created",
+                  "offset": 31
+                },
+                {
+                  "val": "Booked",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.In_Stomp_I_see_the_Product_in_and_Trade_in_state(String,String)"
+            },
+            "output": [
+              "Querying Stomp for Product: 1681934Pv4",
+              "Querying Stomp for Trade: 640120Tv4"
+            ]
+          },
+          {
+            "result": {
+              "duration": 60000980744,
+              "status": "passed"
+            },
+            "name": "I wait for 60 seconds so that all the Klondike downstream systems are in Sync",
+            "keyword": "And ",
+            "line": 37,
+            "match": {
+              "arguments": [
+                {
+                  "val": "60",
+                  "offset": 11
+                },
+                {
+                  "val": "so that all the Klondike downstream systems are in Sync",
+                  "offset": 22
+                }
+              ],
+              "location": "GenericSteps.I_wait_for_seconds(long,String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 48230559,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"ProductInKlondike.json\",\"absoluteFilePath\":\"artefacts/28_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "In Klondike I see the Product in Live status and with:",
+            "keyword": "Then ",
+            "line": 38,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Live",
+                  "offset": 33
+                }
+              ],
+              "location": "KlondikeSteps.In_Klondike_I_see_the_Product_in_status_and_with(String,FieldValuePair\u003e)"
+            },
+            "output": [
+              "Querying Klondike using productStoreReference: 1681934P",
+              "{coltId\u003d52VJ, commonCode\u003d998564751, isin\u003dXS9985647510, previousProductStoreVersion\u003d1681934Pv3, productStoreReference\u003d1681934P, productStoreVersion\u003d1681934Pv4, sedol\u003dBX22112, valoren\u003d26126918}"
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Field",
+                  "Value"
+                ],
+                "line": 39
+              },
+              {
+                "cells": [
+                  "referenceSpotPrices[0]",
+                  "33.0"
+                ],
+                "line": 40
+              }
+            ]
+          },
+          {
+            "result": {
+              "duration": 373770960,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"TicketsInKlondike.json\",\"absoluteFilePath\":\"artefacts/29_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "In Klondike I see 34 Tickets and I group them by events",
+            "keyword": "And ",
+            "line": 42,
+            "match": {
+              "arguments": [
+                {
+                  "val": "34",
+                  "offset": 18
+                }
+              ],
+              "location": "KlondikeSteps.In_Klondike_I_see_Tickets_and_I_group_them_by_events(int)"
+            }
+          },
+          {
+            "result": {
+              "duration": 23601447,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"GroupedTickets_PrimaryZuulGozerNoteTradeTicket.json\",\"absoluteFilePath\":\"artefacts/30_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "I see following Tickets grouped under \"Primary Zuul Gozer Note Trade Ticket\":",
+            "keyword": "And ",
+            "line": 43,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Primary Zuul Gozer Note Trade Ticket",
+                  "offset": 39
+                }
+              ],
+              "location": "KlondikeSteps.I_see_following_Tickets_grouped_under_(String,ExpectedTicket\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "TicketType",
+                  "SubTicketType",
+                  "Source",
+                  "State"
+                ],
+                "line": 44
+              },
+              {
+                "cells": [
+                  "PrimaryZuulGozerNoteTradeTicket",
+                  "",
+                  "",
+                  "Corrected"
+                ],
+                "line": 45
+              },
+              {
+                "cells": [
+                  "IssuanceTicket",
+                  "",
+                  "",
+                  "Corrected"
+                ],
+                "line": 46
+              },
+              {
+                "cells": [
+                  "TriggerRebuildTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 47
+              },
+              {
+                "cells": [
+                  "SecuritisedTradeTicketNF",
+                  "",
+                  "",
+                  "Corrected"
+                ],
+                "line": 48
+              },
+              {
+                "cells": [
+                  "EventStoreTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 49
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Primary Zuul Gozer Note Trade Ticket",
+                  "",
+                  "Processed"
+                ],
+                "line": 50
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Issuance Ticket",
+                  "",
+                  "Processed"
+                ],
+                "line": 51
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Securitised Trade Ticket N F",
+                  "",
+                  "Processed"
+                ],
+                "line": 52
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "ProductCreationWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 53
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "TradeTicketWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 54
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "SecuritisationWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 55
+              },
+              {
+                "cells": [
+                  "BrainTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 56
+              }
+            ]
+          },
+          {
+            "result": {
+              "duration": 8301941,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"GroupedTickets_PrimaryZuulGozerNoteTradeTicket.json\",\"absoluteFilePath\":\"artefacts/31_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "I see following Tickets grouped under \"Primary Zuul Gozer Note Trade Ticket after 1 amend\":",
+            "keyword": "And ",
+            "line": 57,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Primary Zuul Gozer Note Trade Ticket after 1 amend",
+                  "offset": 39
+                }
+              ],
+              "location": "KlondikeSteps.I_see_following_Tickets_grouped_under_(String,ExpectedTicket\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "TicketType",
+                  "SubTicketType",
+                  "Source",
+                  "State"
+                ],
+                "line": 58
+              },
+              {
+                "cells": [
+                  "PrimaryZuulGozerNoteTradeTicket",
+                  "",
+                  "",
+                  "Corrected"
+                ],
+                "line": 59
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "ProductCreationWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 60
+              },
+              {
+                "cells": [
+                  "TriggerRebuildTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 61
+              },
+              {
+                "cells": [
+                  "EventStoreTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 62
+              },
+              {
+                "cells": [
+                  "BrainTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 63
+              },
+              {
+                "cells": [
+                  "SecuritisedTradeTicketNF",
+                  "",
+                  "",
+                  "Corrected"
+                ],
+                "line": 64
+              },
+              {
+                "cells": [
+                  "CorrectionResultsTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 65
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Primary Zuul Gozer Note Trade Ticket",
+                  "",
+                  "Processed"
+                ],
+                "line": 66
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "TradeTicketWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 67
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Securitised Trade Ticket N F",
+                  "",
+                  "Processed"
+                ],
+                "line": 68
+              }
+            ]
+          },
+          {
+            "result": {
+              "duration": 7050357,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"GroupedTickets_PrimaryZuulGozerNoteTradeTicket.json\",\"absoluteFilePath\":\"artefacts/32_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "I see following Tickets grouped under \"Primary Zuul Gozer Note Trade Ticket after 2 amend\":",
+            "keyword": "And ",
+            "line": 69,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Primary Zuul Gozer Note Trade Ticket after 2 amend",
+                  "offset": 39
+                }
+              ],
+              "location": "KlondikeSteps.I_see_following_Tickets_grouped_under_(String,ExpectedTicket\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "TicketType",
+                  "SubTicketType",
+                  "Source",
+                  "State"
+                ],
+                "line": 70
+              },
+              {
+                "cells": [
+                  "PrimaryZuulGozerNoteTradeTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 71
+              },
+              {
+                "cells": [
+                  "IssuanceTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 72
+              },
+              {
+                "cells": [
+                  "TriggerRebuildTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 73
+              },
+              {
+                "cells": [
+                  "SecuritisedTradeTicketNF",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 74
+              },
+              {
+                "cells": [
+                  "EventStoreTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 75
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Primary Zuul Gozer Note Trade Ticket",
+                  "",
+                  "Processed"
+                ],
+                "line": 76
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Issuance Ticket",
+                  "",
+                  "Processed"
+                ],
+                "line": 77
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Securitised Trade Ticket N F",
+                  "",
+                  "Processed"
+                ],
+                "line": 78
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "ProductCreationWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 79
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "TradeTicketWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 80
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "SecuritisationWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 81
+              },
+              {
+                "cells": [
+                  "BrainTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 82
+              }
+            ]
+          },
+          {
+            "result": {
+              "duration": 180001315862,
+              "status": "passed"
+            },
+            "name": "I wait for 180 seconds so that GR EPS Instrument Cache is updated",
+            "keyword": "And ",
+            "line": 84,
+            "match": {
+              "arguments": [
+                {
+                  "val": "180",
+                  "offset": 11
+                },
+                {
+                  "val": "so that GR EPS Instrument Cache is updated",
+                  "offset": 23
+                }
+              ],
+              "location": "GenericSteps.I_wait_for_seconds(long,String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 3654185937,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"GrInstrument.json\",\"absoluteFilePath\":\"artefacts/33_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "In GR APAC I see a updated Instrument",
+            "keyword": "Then ",
+            "line": 85,
+            "match": {
+              "arguments": [
+                {
+                  "val": "APAC",
+                  "offset": 6
+                }
+              ],
+              "location": "GRSteps.In_GR_I_see_a_new_Instrument(String)"
+            },
+            "output": [
+              "Querying GrEpsServer{grConfig\u003dGRConfig{grServerLocation\u003dhttp://xstm1010dap.stm.swissbank.com:8188/gr/apac, rcasLoginId\u003dsso_stompro, rcasPassword\u003dXXXXXXXX}} for Instrument by symbol: STOMP165287"
+            ]
+          },
+          {
+            "result": {
+              "duration": 3090737642,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Tallies_In_GR.json\",\"absoluteFilePath\":\"artefacts/34_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "In GR I see 4 Cancelled Tallies for Risk Class \"HK_EXOTICS\"",
+            "keyword": "And ",
+            "line": 86,
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 12
+                },
+                {
+                  "val": "Cancelled",
+                  "offset": 14
+                },
+                {
+                  "val": "HK_EXOTICS",
+                  "offset": 48
+                }
+              ],
+              "location": "GRSteps.In_GR_I_see_Live_Or_Cancelled_Tallies_for_Risk_Class(int,String,String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 830439,
+              "status": "passed"
+            },
+            "name": "In GR I see 2 Cancelled Tallies for Risk Class \"WARRISS\"",
+            "keyword": "And ",
+            "line": 87,
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 12
+                },
+                {
+                  "val": "Cancelled",
+                  "offset": 14
+                },
+                {
+                  "val": "WARRISS",
+                  "offset": 48
+                }
+              ],
+              "location": "GRSteps.In_GR_I_see_Live_Or_Cancelled_Tallies_for_Risk_Class(int,String,String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 699799,
+              "status": "passed"
+            },
+            "name": "In GR I see 1 Live Tallies for Risk Class \"WARRISS\"",
+            "keyword": "And ",
+            "line": 88,
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 12
+                },
+                {
+                  "val": "Live",
+                  "offset": 14
+                },
+                {
+                  "val": "WARRISS",
+                  "offset": 43
+                }
+              ],
+              "location": "GRSteps.In_GR_I_see_Live_Or_Cancelled_Tallies_for_Risk_Class(int,String,String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 638738,
+              "status": "passed"
+            },
+            "name": "In GR I see 1 Live Tallies for Risk Class \"JAPS\"",
+            "keyword": "And ",
+            "line": 89,
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 12
+                },
+                {
+                  "val": "Live",
+                  "offset": 14
+                },
+                {
+                  "val": "JAPS",
+                  "offset": 43
+                }
+              ],
+              "location": "GRSteps.In_GR_I_see_Live_Or_Cancelled_Tallies_for_Risk_Class(int,String,String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 19684567,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"ObservationCurves_For_3382.json\",\"absoluteFilePath\":\"artefacts/35_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "The GR Instrument has following Observation Curves:",
+            "keyword": "And ",
+            "line": 90,
+            "match": {
+              "location": "GRSteps.The_GR_Instrument_has_following_Observation_Curves(ExpectedObservationCurve\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Underlying",
+                  "Value",
+                  "Source"
+                ],
+                "line": 91
+              },
+              {
+                "cells": [
+                  "3382",
+                  "33",
+                  "Reuters"
+                ],
+                "line": 92
+              }
+            ]
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "[MPP] DCN Gen-2 Amend.feature"
+  },
+  {
+    "id": "amend-of-mpp-erwokig-gen-2",
+    "tags": [
+      {
+        "name": "@MPP",
+        "line": 1
+      }
+    ],
+    "description": "",
+    "name": "Amend of MPP ERWOKIG Gen-2",
+    "keyword": "Feature",
+    "line": 2,
+    "elements": [
+      {
+        "id": "amend-of-mpp-erwokig-gen-2;amend-erwokig-gen-2-change-the-fixings-for-basfn.de-\u0026-baygn.de-and-changing-the-risk-class",
+        "tags": [
+          {
+            "name": "@Gen-2",
+            "line": 4
+          },
+          {
+            "name": "@ERWOKIG",
+            "line": 4
+          },
+          {
+            "name": "@Stomp",
+            "line": 4
+          },
+          {
+            "name": "@Klondike",
+            "line": 4
+          },
+          {
+            "name": "@GR",
+            "line": 4
+          },
+          {
+            "name": "@Amend",
+            "line": 4
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 91172,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedExecutionContext.before(Scenario)"
+            }
+          }
+        ],
+        "description": "",
+        "name": "Amend ERWOKIG Gen-2 change the fixings for BASFn.DE \u0026 BAYGn.DE and changing the Risk class",
+        "keyword": "Scenario",
+        "line": 5,
+        "steps": [
+          {
+            "result": {
+              "duration": 6998057719,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"FaradProductTemplate.json\",\"absoluteFilePath\":\"artefacts/36_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"NewBookingResponse.json\",\"absoluteFilePath\":\"artefacts/37_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "As a \"Sales Person\" I create a Booking in Stomp using FaradProduct Template \"store/faradProductTemplates/[MPP] ERWOKIG Gen-2.json\"",
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sales Person",
+                  "offset": 6
+                },
+                {
+                  "val": "FaradProduct",
+                  "offset": 54
+                },
+                {
+                  "val": "store/faradProductTemplates/[MPP] ERWOKIG Gen-2.json",
+                  "offset": 77
+                }
+              ],
+              "location": "AddOnSteps.I_create_a_Booking_in_Stomp_using_FaradProduct_Template(String,String,String)"
+            },
+            "output": [
+              "{\"message\":\"Successfully uploaded drop file\",\"productSymbol\":\"STOMP165297\",\"status\":\"200\"}"
+            ]
+          },
+          {
+            "result": {
+              "duration": 559482399,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Product_1681944Pv1.json\",\"absoluteFilePath\":\"artefacts/38_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "I want to Book a new Trade on this Product I fill following values:",
+            "keyword": "Then ",
+            "line": 7,
+            "match": {
+              "location": "AddOnSteps.I_want_to_Book_a_new_Trade_on_this_Product_I_fill_following_values(FieldValuePair\u003e)"
+            },
+            "output": [
+              "Querying Stomp for Product: 1681944Pv1"
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Section",
+                  "Field",
+                  "Value"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "Securitisation",
+                  "Subscription Launch Date",
+                  "\u003dtoday"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "Securitisation",
+                  "First Trading Date",
+                  "\u003dtoday"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "Contract",
+                  "Issue Date",
+                  "\u003dtoday(7)"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "Trade",
+                  "Settlement Date",
+                  "\u003dtoday(7)"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "Contract Extension",
+                  "Payment Date",
+                  "\u003dtoday(7)"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "Trade",
+                  "Trade Date",
+                  "\u003dtoday"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "Allocations",
+                  "Risk Class",
+                  "E_EUROPE"
+                ],
+                "line": 15
+              },
+              {
+                "cells": [
+                  "Issuance Platform",
+                  "Issuance Platform",
+                  "CH Standalone"
+                ],
+                "line": 16
+              },
+              {
+                "cells": [
+                  "Securitisation",
+                  "Fixed Coupon Interest Component",
+                  "0.01"
+                ],
+                "line": 17
+              }
+            ]
+          },
+          {
+            "result": {
+              "duration": 2198395,
+              "status": "passed"
+            },
+            "name": "In Underlying Fixings table inside Fixings section of Product I enter following values:",
+            "keyword": "And ",
+            "line": 18,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Underlying Fixings",
+                  "offset": 3
+                },
+                {
+                  "val": "Fixings",
+                  "offset": 35
+                },
+                {
+                  "val": "Product",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.In_table_inside_section_of_I_enter_following(String,String,StompEntityType,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Reference Spot Prices",
+                  "Reference Is Final"
+                ],
+                "line": 19
+              },
+              {
+                "cells": [
+                  "23",
+                  "Yes"
+                ],
+                "line": 20
+              },
+              {
+                "cells": [
+                  "77",
+                  "Yes"
+                ],
+                "line": 21
+              }
+            ]
+          },
+          {
+            "result": {
+              "duration": 21002974411,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Product_1681944Pv1.json\",\"absoluteFilePath\":\"artefacts/39_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Product_After_SUBMIT_1681944Pv2.json\",\"absoluteFilePath\":\"artefacts/40_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "I SUBMIT the Product in Stomp and wait for 20 seconds so that all the Stomp downstream systems are in sync",
+            "keyword": "And ",
+            "line": 22,
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "SUBMIT",
+                  "offset": 2
+                },
+                {
+                  "val": "Product",
+                  "offset": 13
+                },
+                {
+                  "val": "20",
+                  "offset": 43
+                },
+                {
+                  "val": "so that all the Stomp downstream systems are in sync",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.I_the_Product_in_Stomp_and_wait_for_seconds(String,String,StompEntityType,long,String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 633617707,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Product_1681944Pv3.json\",\"absoluteFilePath\":\"artefacts/41_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Product_StateInStomp.json\",\"absoluteFilePath\":\"artefacts/42_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Trade_640096Tv2.json\",\"absoluteFilePath\":\"artefacts/43_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Trade_StateInStomp.json\",\"absoluteFilePath\":\"artefacts/44_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "In Stomp I see the Product in \"Created\" and Trade in \"Booked\" state",
+            "keyword": "Then ",
+            "line": 23,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Created",
+                  "offset": 31
+                },
+                {
+                  "val": "Booked",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.In_Stomp_I_see_the_Product_in_and_Trade_in_state(String,String)"
+            },
+            "output": [
+              "Querying Stomp for Product: 1681944Pv3",
+              "Querying Stomp for Trade: 640096Tv2"
+            ]
+          },
+          {
+            "result": {
+              "duration": 60000718291,
+              "status": "passed"
+            },
+            "name": "I wait for 60 seconds so that all the Klondike downstream systems are in Sync",
+            "keyword": "And ",
+            "line": 24,
+            "match": {
+              "arguments": [
+                {
+                  "val": "60",
+                  "offset": 11
+                },
+                {
+                  "val": "so that all the Klondike downstream systems are in Sync",
+                  "offset": 22
+                }
+              ],
+              "location": "GenericSteps.I_wait_for_seconds(long,String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 829536147,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"ProductInKlondike.json\",\"absoluteFilePath\":\"artefacts/45_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"TicketsInKlondike.json\",\"absoluteFilePath\":\"artefacts/46_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "In Klondike I see the Product in Live status with 16 Tickets in Processed state",
+            "keyword": "Then ",
+            "line": 25,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Live",
+                  "offset": 33
+                },
+                {
+                  "val": "16",
+                  "offset": 50
+                },
+                {
+                  "val": "Processed",
+                  "offset": 64
+                }
+              ],
+              "location": "KlondikeSteps.In_Klondike_I_see_the_Product_in_Live_status_with_Tickets_in_state(String,int,String)"
+            },
+            "output": [
+              "Querying Klondike using productStoreReference: 1681944P",
+              "{coltId\u003d52V8, isin\u003dCH0286497240, previousProductStoreVersion\u003d1681944Pv2, productStoreReference\u003d1681944P, productStoreVersion\u003d1681944Pv3, sedol\u003dBX29S89, uuid\u003d280496337, valoren\u003d28649724, wkn\u003dUX0BWA}"
+            ]
+          },
+          {
+            "result": {
+              "duration": 117562416,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Product_After_AMEND_1681944Pv3.json\",\"absoluteFilePath\":\"artefacts/47_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "I Amend Underlying Fixings table inside Fixings section of Product I enter following:",
+            "keyword": "When ",
+            "line": 27,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Underlying Fixings",
+                  "offset": 8
+                },
+                {
+                  "val": "Fixings",
+                  "offset": 40
+                },
+                {
+                  "val": "Product",
+                  "offset": 59
+                }
+              ],
+              "location": "AddOnSteps.I_Amend_table_inside_section_of_I_enter_following(String,String,StompEntityType,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Reference Spot Prices",
+                  "Reference Is Final"
+                ],
+                "line": 28
+              },
+              {
+                "cells": [
+                  "30",
+                  "Yes"
+                ],
+                "line": 29
+              },
+              {
+                "cells": [
+                  "88",
+                  "Yes"
+                ],
+                "line": 30
+              }
+            ]
+          },
+          {
+            "result": {
+              "duration": 21016222825,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Product_1681944Pv3.json\",\"absoluteFilePath\":\"artefacts/48_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Product_After_AMEND_SUBMIT_1681944Pv4.json\",\"absoluteFilePath\":\"artefacts/49_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "I AMEND_SUBMIT the Product in Stomp and wait for 20 seconds so that all the Stomp downstream systems are in sync",
+            "keyword": "And ",
+            "line": 31,
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "AMEND_SUBMIT",
+                  "offset": 2
+                },
+                {
+                  "val": "Product",
+                  "offset": 19
+                },
+                {
+                  "val": "20",
+                  "offset": 49
+                },
+                {
+                  "val": "so that all the Stomp downstream systems are in sync",
+                  "offset": 60
+                }
+              ],
+              "location": "AddOnSteps.I_the_Product_in_Stomp_and_wait_for_seconds(String,String,StompEntityType,long,String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 522047368,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Product_1681944Pv4.json\",\"absoluteFilePath\":\"artefacts/50_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Product_StateInStomp.json\",\"absoluteFilePath\":\"artefacts/51_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Trade_640096Tv3.json\",\"absoluteFilePath\":\"artefacts/52_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Trade_StateInStomp.json\",\"absoluteFilePath\":\"artefacts/53_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "In Stomp I see the Product in \"Created\" and Trade in \"Booked\" state",
+            "keyword": "Then ",
+            "line": 32,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Created",
+                  "offset": 31
+                },
+                {
+                  "val": "Booked",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.In_Stomp_I_see_the_Product_in_and_Trade_in_state(String,String)"
+            },
+            "output": [
+              "Querying Stomp for Product: 1681944Pv4",
+              "Querying Stomp for Trade: 640096Tv3"
+            ]
+          },
+          {
+            "result": {
+              "duration": 83884457,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Trade_After_AMEND_640096Tv3.json\",\"absoluteFilePath\":\"artefacts/54_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "I want to Amend this Trade with the following values:",
+            "keyword": "When ",
+            "line": 34,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Trade",
+                  "offset": 21
+                }
+              ],
+              "location": "AddOnSteps.I_want_to_Amend_this_with_the_following_values(StompEntityType,FieldValuePair\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Section",
+                  "Field",
+                  "Value"
+                ],
+                "line": 35
+              },
+              {
+                "cells": [
+                  "Allocations",
+                  "Risk Class",
+                  "E_G_CIPEXOTIC"
+                ],
+                "line": 36
+              }
+            ]
+          },
+          {
+            "result": {
+              "duration": 20334211868,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Trade_After_AMEND_SUBMIT_640096Tv4.json\",\"absoluteFilePath\":\"artefacts/55_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "I AMEND_SUBMIT the Trade in Stomp and wait for 20 seconds so that all the Stomp downstream systems are in sync",
+            "keyword": "And ",
+            "line": 37,
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "AMEND_SUBMIT",
+                  "offset": 2
+                },
+                {
+                  "val": "Trade",
+                  "offset": 19
+                },
+                {
+                  "val": "20",
+                  "offset": 47
+                },
+                {
+                  "val": "so that all the Stomp downstream systems are in sync",
+                  "offset": 58
+                }
+              ],
+              "location": "AddOnSteps.I_the_Product_in_Stomp_and_wait_for_seconds(String,String,StompEntityType,long,String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 862399232,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Product_1681944Pv4.json\",\"absoluteFilePath\":\"artefacts/56_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Product_StateInStomp.json\",\"absoluteFilePath\":\"artefacts/57_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Trade_640096Tv4.json\",\"absoluteFilePath\":\"artefacts/58_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Trade_StateInStomp.json\",\"absoluteFilePath\":\"artefacts/59_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "In Stomp I see the Product in \"Created\" and Trade in \"Booked\" state",
+            "keyword": "Then ",
+            "line": 38,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Created",
+                  "offset": 31
+                },
+                {
+                  "val": "Booked",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.In_Stomp_I_see_the_Product_in_and_Trade_in_state(String,String)"
+            },
+            "output": [
+              "Querying Stomp for Product: 1681944Pv4",
+              "Querying Stomp for Trade: 640096Tv4"
+            ]
+          },
+          {
+            "result": {
+              "duration": 60000887479,
+              "status": "passed"
+            },
+            "name": "I wait for 60 seconds so that all the Klondike downstream systems are in Sync",
+            "keyword": "And ",
+            "line": 40,
+            "match": {
+              "arguments": [
+                {
+                  "val": "60",
+                  "offset": 11
+                },
+                {
+                  "val": "so that all the Klondike downstream systems are in Sync",
+                  "offset": 22
+                }
+              ],
+              "location": "GenericSteps.I_wait_for_seconds(long,String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 52647764,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"ProductInKlondike.json\",\"absoluteFilePath\":\"artefacts/60_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "In Klondike I see the Product in Live status and with:",
+            "keyword": "Then ",
+            "line": 41,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Live",
+                  "offset": 33
+                }
+              ],
+              "location": "KlondikeSteps.In_Klondike_I_see_the_Product_in_status_and_with(String,FieldValuePair\u003e)"
+            },
+            "output": [
+              "Querying Klondike using productStoreReference: 1681944P",
+              "{coltId\u003d52V8, isin\u003dCH0286497240, previousProductStoreVersion\u003d1681944Pv3, productStoreReference\u003d1681944P, productStoreVersion\u003d1681944Pv4, sedol\u003dBX29S89, uuid\u003d280496337, valoren\u003d28649724, wkn\u003dUX0BWA}"
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Field",
+                  "Value"
+                ],
+                "line": 42
+              },
+              {
+                "cells": [
+                  "referenceSpotPrices[0]",
+                  "30.0"
+                ],
+                "line": 43
+              },
+              {
+                "cells": [
+                  "referenceSpotPrices[1]",
+                  "88.0"
+                ],
+                "line": 44
+              }
+            ]
+          },
+          {
+            "result": {
+              "duration": 241721472,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"TicketsInKlondike.json\",\"absoluteFilePath\":\"artefacts/61_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "In Klondike I see 46 Tickets and I group them by events",
+            "keyword": "And ",
+            "line": 45,
+            "match": {
+              "arguments": [
+                {
+                  "val": "46",
+                  "offset": 18
+                }
+              ],
+              "location": "KlondikeSteps.In_Klondike_I_see_Tickets_and_I_group_them_by_events(int)"
+            }
+          },
+          {
+            "result": {
+              "duration": 10527675,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"GroupedTickets_PrimaryZuulGozerNoteTradeTicket.json\",\"absoluteFilePath\":\"artefacts/62_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "I see following Tickets grouped under \"Primary Zuul Gozer Note Trade Ticket\":",
+            "keyword": "And ",
+            "line": 46,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Primary Zuul Gozer Note Trade Ticket",
+                  "offset": 39
+                }
+              ],
+              "location": "KlondikeSteps.I_see_following_Tickets_grouped_under_(String,ExpectedTicket\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "TicketType",
+                  "SubTicketType",
+                  "Source",
+                  "State"
+                ],
+                "line": 47
+              },
+              {
+                "cells": [
+                  "PrimaryZuulGozerNoteTradeTicket",
+                  "",
+                  "",
+                  "Corrected"
+                ],
+                "line": 48
+              },
+              {
+                "cells": [
+                  "IssuanceTicket",
+                  "",
+                  "",
+                  "Corrected"
+                ],
+                "line": 49
+              },
+              {
+                "cells": [
+                  "TriggerRebuildTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 50
+              },
+              {
+                "cells": [
+                  "SecuritisedTradeTicketNF",
+                  "",
+                  "",
+                  "Corrected"
+                ],
+                "line": 51
+              },
+              {
+                "cells": [
+                  "EventStoreTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 52
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Primary Zuul Gozer Note Trade Ticket",
+                  "",
+                  "Processed"
+                ],
+                "line": 53
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Issuance Ticket",
+                  "",
+                  "Processed"
+                ],
+                "line": 54
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Securitised Trade Ticket N F",
+                  "",
+                  "Processed"
+                ],
+                "line": 55
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "ProductCreationWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 56
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "TradeTicketWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 57
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "SecuritisationWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 58
+              },
+              {
+                "cells": [
+                  "GenerateTermsheetTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 59
+              },
+              {
+                "cells": [
+                  "CpssFeedTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 60
+              },
+              {
+                "cells": [
+                  "CpssUpdateTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 61
+              },
+              {
+                "cells": [
+                  "ColtFeedTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 62
+              },
+              {
+                "cells": [
+                  "ColtFeedTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 63
+              }
+            ]
+          },
+          {
+            "result": {
+              "duration": 8424991,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"GroupedTickets_PrimaryZuulGozerNoteTradeTicket.json\",\"absoluteFilePath\":\"artefacts/63_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "I see following Tickets grouped under \"Primary Zuul Gozer Note Trade Ticket after 1 amend\":",
+            "keyword": "And ",
+            "line": 64,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Primary Zuul Gozer Note Trade Ticket after 1 amend",
+                  "offset": 39
+                }
+              ],
+              "location": "KlondikeSteps.I_see_following_Tickets_grouped_under_(String,ExpectedTicket\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "TicketType",
+                  "SubTicketType",
+                  "Source",
+                  "State"
+                ],
+                "line": 65
+              },
+              {
+                "cells": [
+                  "PrimaryZuulGozerNoteTradeTicket",
+                  "",
+                  "",
+                  "Corrected"
+                ],
+                "line": 66
+              },
+              {
+                "cells": [
+                  "GenerateTermsheetTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 67
+              },
+              {
+                "cells": [
+                  "TriggerRebuildTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 68
+              },
+              {
+                "cells": [
+                  "SecuritisedTradeTicketNF",
+                  "",
+                  "",
+                  "Corrected"
+                ],
+                "line": 69
+              },
+              {
+                "cells": [
+                  "EventStoreTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 70
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "ProductCreationWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 71
+              },
+              {
+                "cells": [
+                  "CorrectionResultsTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 72
+              },
+              {
+                "cells": [
+                  "CpssFeedTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 73
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Primary Zuul Gozer Note Trade Ticket",
+                  "",
+                  "Processed"
+                ],
+                "line": 74
+              },
+              {
+                "cells": [
+                  "ColtFeedTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 75
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "TradeTicketWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 76
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Securitised Trade Ticket N F",
+                  "",
+                  "Processed"
+                ],
+                "line": 77
+              },
+              {
+                "cells": [
+                  "CpssUpdateTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 78
+              }
+            ]
+          },
+          {
+            "result": {
+              "duration": 8762957,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"GroupedTickets_PrimaryZuulGozerNoteTradeTicket.json\",\"absoluteFilePath\":\"artefacts/64_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "I see following Tickets grouped under \"Primary Zuul Gozer Note Trade Ticket after 2 amend\":",
+            "keyword": "And ",
+            "line": 79,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Primary Zuul Gozer Note Trade Ticket after 2 amend",
+                  "offset": 39
+                }
+              ],
+              "location": "KlondikeSteps.I_see_following_Tickets_grouped_under_(String,ExpectedTicket\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "TicketType",
+                  "SubTicketType",
+                  "Source",
+                  "State"
+                ],
+                "line": 80
+              },
+              {
+                "cells": [
+                  "PrimaryZuulGozerNoteTradeTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 81
+              },
+              {
+                "cells": [
+                  "IssuanceTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 82
+              },
+              {
+                "cells": [
+                  "EventStoreTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 83
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "ProductCreationWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 84
+              },
+              {
+                "cells": [
+                  "TriggerRebuildTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 85
+              },
+              {
+                "cells": [
+                  "SecuritisedTradeTicketNF",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 86
+              },
+              {
+                "cells": [
+                  "GenerateTermsheetTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 87
+              },
+              {
+                "cells": [
+                  "CpssFeedTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 88
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Primary Zuul Gozer Note Trade Ticket",
+                  "",
+                  "Processed"
+                ],
+                "line": 89
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "SecuritisationWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 90
+              },
+              {
+                "cells": [
+                  "ColtFeedTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 91
+              },
+              {
+                "cells": [
+                  "ColtFeedTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 92
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "TradeTicketWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 93
+              },
+              {
+                "cells": [
+                  "ColtFeedTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 94
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Issuance Ticket",
+                  "",
+                  "Processed"
+                ],
+                "line": 95
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Securitised Trade Ticket N F",
+                  "",
+                  "Processed"
+                ],
+                "line": 96
+              },
+              {
+                "cells": [
+                  "CpssUpdateTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 97
+              }
+            ]
+          },
+          {
+            "result": {
+              "duration": 180000712615,
+              "status": "passed"
+            },
+            "name": "I wait for 180 seconds so that GR EPS Instrument Cache is updated",
+            "keyword": "And ",
+            "line": 99,
+            "match": {
+              "arguments": [
+                {
+                  "val": "180",
+                  "offset": 11
+                },
+                {
+                  "val": "so that GR EPS Instrument Cache is updated",
+                  "offset": 23
+                }
+              ],
+              "location": "GenericSteps.I_wait_for_seconds(long,String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 2993184639,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"GrInstrument.json\",\"absoluteFilePath\":\"artefacts/65_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "In GR EMEA I see a updated Instrument",
+            "keyword": "Then ",
+            "line": 100,
+            "match": {
+              "arguments": [
+                {
+                  "val": "EMEA",
+                  "offset": 6
+                }
+              ],
+              "location": "GRSteps.In_GR_I_see_a_new_Instrument(String)"
+            },
+            "output": [
+              "Querying GrEpsServer{grConfig\u003dGRConfig{grServerLocation\u003dhttp://xstm1010dap.stm.swissbank.com:5382/gr/ldn, rcasLoginId\u003dsso_stompro, rcasPassword\u003dXXXXXXXX}} for Instrument by symbol: STOMP165297"
+            ]
+          },
+          {
+            "result": {
+              "duration": 3233764913,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Tallies_In_GR.json\",\"absoluteFilePath\":\"artefacts/66_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "In GR I see 3 Live Tallies for Risk Class \"E_G_CIPEXOTIC\"",
+            "keyword": "And ",
+            "line": 101,
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 12
+                },
+                {
+                  "val": "Live",
+                  "offset": 14
+                },
+                {
+                  "val": "E_G_CIPEXOTIC",
+                  "offset": 43
+                }
+              ],
+              "location": "GRSteps.In_GR_I_see_Live_Or_Cancelled_Tallies_for_Risk_Class(int,String,String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 795015,
+              "status": "passed"
+            },
+            "name": "In GR I see 8 Cancelled Tallies for Risk Class \"E_EUROPE\"",
+            "keyword": "And ",
+            "line": 102,
+            "match": {
+              "arguments": [
+                {
+                  "val": "8",
+                  "offset": 12
+                },
+                {
+                  "val": "Cancelled",
+                  "offset": 14
+                },
+                {
+                  "val": "E_EUROPE",
+                  "offset": 48
+                }
+              ],
+              "location": "GRSteps.In_GR_I_see_Live_Or_Cancelled_Tallies_for_Risk_Class(int,String,String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 2066730,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"ObservationCurves_For_BASF\u003dD.json\",\"absoluteFilePath\":\"artefacts/67_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"ObservationCurves_For_BAY\u003dD.json\",\"absoluteFilePath\":\"artefacts/68_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "The GR Instrument has following Observation Curves:",
+            "keyword": "And ",
+            "line": 103,
+            "match": {
+              "location": "GRSteps.The_GR_Instrument_has_following_Observation_Curves(ExpectedObservationCurve\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Underlying",
+                  "Value",
+                  "Source"
+                ],
+                "line": 104
+              },
+              {
+                "cells": [
+                  "BASF\u003dD",
+                  "30",
+                  "Reuters"
+                ],
+                "line": 105
+              },
+              {
+                "cells": [
+                  "BAY\u003dD",
+                  "88",
+                  "Reuters"
+                ],
+                "line": 106
+              }
+            ]
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "[MPP] ERWOKIG Gen-2 Amend.feature"
+  },
+  {
+    "id": "amend-of-mpp-pac-gen-2",
+    "tags": [
+      {
+        "name": "@MPP",
+        "line": 1
+      }
+    ],
+    "description": "",
+    "name": "Amend of MPP PAC Gen-2",
+    "keyword": "Feature",
+    "line": 2,
+    "elements": [
+      {
+        "id": "amend-of-mpp-pac-gen-2;amend-pac-gen-2-change-the-fixings-for-aapl.oq-and-changing-the-risk-class",
+        "tags": [
+          {
+            "name": "@Gen-2",
+            "line": 4
+          },
+          {
+            "name": "@PAC",
+            "line": 4
+          },
+          {
+            "name": "@Stomp",
+            "line": 4
+          },
+          {
+            "name": "@Klondike",
+            "line": 4
+          },
+          {
+            "name": "@GR",
+            "line": 4
+          },
+          {
+            "name": "@Amend",
+            "line": 4
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 47491,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedExecutionContext.before(Scenario)"
+            }
+          }
+        ],
+        "description": "",
+        "name": "Amend PAC Gen-2 change the fixings for AAPL.OQ and changing the Risk class",
+        "keyword": "Scenario",
+        "line": 5,
+        "steps": [
+          {
+            "result": {
+              "duration": 6419517555,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"FaradProductTemplate.json\",\"absoluteFilePath\":\"artefacts/69_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"NewBookingResponse.json\",\"absoluteFilePath\":\"artefacts/70_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "As a \"Sales Person\" I create a Booking in Stomp using FaradProduct Template \"store/faradProductTemplates/[MPP] PAC Gen-2.json\"",
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sales Person",
+                  "offset": 6
+                },
+                {
+                  "val": "FaradProduct",
+                  "offset": 54
+                },
+                {
+                  "val": "store/faradProductTemplates/[MPP] PAC Gen-2.json",
+                  "offset": 77
+                }
+              ],
+              "location": "AddOnSteps.I_create_a_Booking_in_Stomp_using_FaradProduct_Template(String,String,String)"
+            },
+            "output": [
+              "{\"message\":\"Successfully uploaded drop file\",\"productSymbol\":\"STOMP165304\",\"status\":\"200\"}"
+            ]
+          },
+          {
+            "result": {
+              "duration": 418420180,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Product_1681951Pv1.json\",\"absoluteFilePath\":\"artefacts/71_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "I want to Book a new Trade on this Product I fill following values:",
+            "keyword": "Then ",
+            "line": 7,
+            "match": {
+              "location": "AddOnSteps.I_want_to_Book_a_new_Trade_on_this_Product_I_fill_following_values(FieldValuePair\u003e)"
+            },
+            "output": [
+              "Querying Stomp for Product: 1681951Pv1"
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Section",
+                  "Field",
+                  "Value"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "Contract",
+                  "Issue Date",
+                  "\u003dtoday(7)"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "Trade",
+                  "Settlement Date",
+                  "\u003dtoday(7)"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "Contract Extension",
+                  "Payment Date",
+                  "\u003dtoday(7)"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "Trade",
+                  "Trade Date",
+                  "\u003dtoday"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "Allocations",
+                  "Risk Class",
+                  "USD-GED"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "Issuance Platform",
+                  "Issuance Platform",
+                  "US Reg-S"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "Settlement",
+                  "Adj. Stock Num Rounding",
+                  "Round_1DP"
+                ],
+                "line": 15
+              },
+              {
+                "cells": [
+                  "Settlement",
+                  "Odd Lot Rounding (Physical)",
+                  "NoRounding"
+                ],
+                "line": 16
+              }
+            ]
+          },
+          {
+            "result": {
+              "duration": 822190,
+              "status": "passed"
+            },
+            "name": "In Underlying Fixings table inside Fixings section of Product I enter following values:",
+            "keyword": "And ",
+            "line": 17,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Underlying Fixings",
+                  "offset": 3
+                },
+                {
+                  "val": "Fixings",
+                  "offset": 35
+                },
+                {
+                  "val": "Product",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.In_table_inside_section_of_I_enter_following(String,String,StompEntityType,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Reference Spot Prices",
+                  "Reference Is Final"
+                ],
+                "line": 18
+              },
+              {
+                "cells": [
+                  "23",
+                  "Yes"
+                ],
+                "line": 19
+              }
+            ]
+          },
+          {
+            "result": {
+              "duration": 136370070,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"RefIdServerResponse.json\",\"absoluteFilePath\":\"artefacts/72_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "I want to Book this Product with the following unique identifiers from RefId:",
+            "keyword": "And ",
+            "line": 20,
+            "match": {
+              "location": "AddOnSteps.I_want_to_Book_this_contract_with_the_following_unique_identifiers_from_RefId(RefIdAwareValue\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Section",
+                  "Field",
+                  "Value"
+                ],
+                "line": 21
+              },
+              {
+                "cells": [
+                  "Securitisation",
+                  "Isin",
+                  "xsIsin"
+                ],
+                "line": 22
+              },
+              {
+                "cells": [
+                  "Securitisation",
+                  "Common Code",
+                  "xscommoncode"
+                ],
+                "line": 23
+              }
+            ]
+          },
+          {
+            "result": {
+              "duration": 20836336652,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Product_1681951Pv1.json\",\"absoluteFilePath\":\"artefacts/73_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Product_After_SUBMIT_1681951Pv2.json\",\"absoluteFilePath\":\"artefacts/74_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "I SUBMIT the Product in Stomp and wait for 20 seconds so that all the Stomp downstream systems are in sync",
+            "keyword": "And ",
+            "line": 24,
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "SUBMIT",
+                  "offset": 2
+                },
+                {
+                  "val": "Product",
+                  "offset": 13
+                },
+                {
+                  "val": "20",
+                  "offset": 43
+                },
+                {
+                  "val": "so that all the Stomp downstream systems are in sync",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.I_the_Product_in_Stomp_and_wait_for_seconds(String,String,StompEntityType,long,String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 583863633,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Product_1681951Pv3.json\",\"absoluteFilePath\":\"artefacts/75_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Product_StateInStomp.json\",\"absoluteFilePath\":\"artefacts/76_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Trade_640111Tv2.json\",\"absoluteFilePath\":\"artefacts/77_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Trade_StateInStomp.json\",\"absoluteFilePath\":\"artefacts/78_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "In Stomp I see the Product in \"Created\" and Trade in \"Booked\" state",
+            "keyword": "Then ",
+            "line": 25,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Created",
+                  "offset": 31
+                },
+                {
+                  "val": "Booked",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.In_Stomp_I_see_the_Product_in_and_Trade_in_state(String,String)"
+            },
+            "output": [
+              "Querying Stomp for Product: 1681951Pv3",
+              "Querying Stomp for Trade: 640111Tv2"
+            ]
+          },
+          {
+            "result": {
+              "duration": 60000799469,
+              "status": "passed"
+            },
+            "name": "I wait for 60 seconds so that all the Klondike downstream systems are in Sync",
+            "keyword": "And ",
+            "line": 26,
+            "match": {
+              "arguments": [
+                {
+                  "val": "60",
+                  "offset": 11
+                },
+                {
+                  "val": "so that all the Klondike downstream systems are in Sync",
+                  "offset": 22
+                }
+              ],
+              "location": "GenericSteps.I_wait_for_seconds(long,String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 159398515,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"ProductInKlondike.json\",\"absoluteFilePath\":\"artefacts/79_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"TicketsInKlondike.json\",\"absoluteFilePath\":\"artefacts/80_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "In Klondike I see the Product in Live status with 16 Tickets in Processed state",
+            "keyword": "Then ",
+            "line": 27,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Live",
+                  "offset": 33
+                },
+                {
+                  "val": "16",
+                  "offset": 50
+                },
+                {
+                  "val": "Processed",
+                  "offset": 64
+                }
+              ],
+              "location": "KlondikeSteps.In_Klondike_I_see_the_Product_in_Live_status_with_Tickets_in_state(String,int,String)"
+            },
+            "output": [
+              "Querying Klondike using productStoreReference: 1681951P",
+              "{coltId\u003d52+G, commonCode\u003d998564835, isin\u003dXS9985648351, previousProductStoreVersion\u003d1681951Pv2, productStoreReference\u003d1681951P, productStoreVersion\u003d1681951Pv3, sedol\u003dBX2B8J6, seriesNumber\u003d110902, uuid\u003d280496343, valoren\u003d26126905}"
+            ]
+          },
+          {
+            "result": {
+              "duration": 145196425,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Product_After_AMEND_1681951Pv3.json\",\"absoluteFilePath\":\"artefacts/81_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "I Amend Underlying Fixings table inside Fixings section of Product I enter following:",
+            "keyword": "When ",
+            "line": 29,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Underlying Fixings",
+                  "offset": 8
+                },
+                {
+                  "val": "Fixings",
+                  "offset": 40
+                },
+                {
+                  "val": "Product",
+                  "offset": 59
+                }
+              ],
+              "location": "AddOnSteps.I_Amend_table_inside_section_of_I_enter_following(String,String,StompEntityType,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Reference Spot Prices",
+                  "Reference Is Final"
+                ],
+                "line": 30
+              },
+              {
+                "cells": [
+                  "30",
+                  "Yes"
+                ],
+                "line": 31
+              }
+            ]
+          },
+          {
+            "result": {
+              "duration": 20577006244,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Product_1681951Pv3.json\",\"absoluteFilePath\":\"artefacts/82_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Product_After_AMEND_SUBMIT_1681951Pv4.json\",\"absoluteFilePath\":\"artefacts/83_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "I AMEND_SUBMIT the Product in Stomp and wait for 20 seconds so that all the Stomp downstream systems are in sync",
+            "keyword": "And ",
+            "line": 32,
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "AMEND_SUBMIT",
+                  "offset": 2
+                },
+                {
+                  "val": "Product",
+                  "offset": 19
+                },
+                {
+                  "val": "20",
+                  "offset": 49
+                },
+                {
+                  "val": "so that all the Stomp downstream systems are in sync",
+                  "offset": 60
+                }
+              ],
+              "location": "AddOnSteps.I_the_Product_in_Stomp_and_wait_for_seconds(String,String,StompEntityType,long,String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 521915282,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Product_1681951Pv4.json\",\"absoluteFilePath\":\"artefacts/84_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Product_StateInStomp.json\",\"absoluteFilePath\":\"artefacts/85_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Trade_640111Tv3.json\",\"absoluteFilePath\":\"artefacts/86_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Trade_StateInStomp.json\",\"absoluteFilePath\":\"artefacts/87_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "In Stomp I see the Product in \"Created\" and Trade in \"Booked\" state",
+            "keyword": "Then ",
+            "line": 33,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Created",
+                  "offset": 31
+                },
+                {
+                  "val": "Booked",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.In_Stomp_I_see_the_Product_in_and_Trade_in_state(String,String)"
+            },
+            "output": [
+              "Querying Stomp for Product: 1681951Pv4",
+              "Querying Stomp for Trade: 640111Tv3"
+            ]
+          },
+          {
+            "result": {
+              "duration": 241098931,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Trade_After_AMEND_640111Tv3.json\",\"absoluteFilePath\":\"artefacts/88_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "I want to Amend this Trade with the following values:",
+            "keyword": "When ",
+            "line": 35,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Trade",
+                  "offset": 21
+                }
+              ],
+              "location": "AddOnSteps.I_want_to_Amend_this_with_the_following_values(StompEntityType,FieldValuePair\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Section",
+                  "Field",
+                  "Value"
+                ],
+                "line": 36
+              },
+              {
+                "cells": [
+                  "Allocations",
+                  "Risk Class",
+                  "SPX"
+                ],
+                "line": 37
+              }
+            ]
+          },
+          {
+            "result": {
+              "duration": 20458657892,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Trade_After_AMEND_SUBMIT_640111Tv4.json\",\"absoluteFilePath\":\"artefacts/89_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "I AMEND_SUBMIT the Trade in Stomp and wait for 20 seconds so that all the Stomp downstream systems are in sync",
+            "keyword": "And ",
+            "line": 38,
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "AMEND_SUBMIT",
+                  "offset": 2
+                },
+                {
+                  "val": "Trade",
+                  "offset": 19
+                },
+                {
+                  "val": "20",
+                  "offset": 47
+                },
+                {
+                  "val": "so that all the Stomp downstream systems are in sync",
+                  "offset": 58
+                }
+              ],
+              "location": "AddOnSteps.I_the_Product_in_Stomp_and_wait_for_seconds(String,String,StompEntityType,long,String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 453477574,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Product_1681951Pv4.json\",\"absoluteFilePath\":\"artefacts/90_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Product_StateInStomp.json\",\"absoluteFilePath\":\"artefacts/91_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Trade_640111Tv4.json\",\"absoluteFilePath\":\"artefacts/92_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              },
+              {
+                "mime_type": "{\"fileName\":\"Trade_StateInStomp.json\",\"absoluteFilePath\":\"artefacts/93_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "In Stomp I see the Product in \"Created\" and Trade in \"Booked\" state",
+            "keyword": "Then ",
+            "line": 39,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Created",
+                  "offset": 31
+                },
+                {
+                  "val": "Booked",
+                  "offset": 54
+                }
+              ],
+              "location": "AddOnSteps.In_Stomp_I_see_the_Product_in_and_Trade_in_state(String,String)"
+            },
+            "output": [
+              "Querying Stomp for Product: 1681951Pv4",
+              "Querying Stomp for Trade: 640111Tv4"
+            ]
+          },
+          {
+            "result": {
+              "duration": 60000741365,
+              "status": "passed"
+            },
+            "name": "I wait for 60 seconds so that all the Klondike downstream systems are in Sync",
+            "keyword": "And ",
+            "line": 41,
+            "match": {
+              "arguments": [
+                {
+                  "val": "60",
+                  "offset": 11
+                },
+                {
+                  "val": "so that all the Klondike downstream systems are in Sync",
+                  "offset": 22
+                }
+              ],
+              "location": "GenericSteps.I_wait_for_seconds(long,String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 64490671,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"ProductInKlondike.json\",\"absoluteFilePath\":\"artefacts/94_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "In Klondike I see the Product in Live status and with:",
+            "keyword": "Then ",
+            "line": 42,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Live",
+                  "offset": 33
+                }
+              ],
+              "location": "KlondikeSteps.In_Klondike_I_see_the_Product_in_status_and_with(String,FieldValuePair\u003e)"
+            },
+            "output": [
+              "Querying Klondike using productStoreReference: 1681951P",
+              "{coltId\u003d52+G, commonCode\u003d998564835, isin\u003dXS9985648351, previousProductStoreVersion\u003d1681951Pv3, productStoreReference\u003d1681951P, productStoreVersion\u003d1681951Pv4, sedol\u003dBX2B8J6, seriesNumber\u003d110902, uuid\u003d280496343, valoren\u003d26126905}"
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Field",
+                  "Value"
+                ],
+                "line": 43
+              },
+              {
+                "cells": [
+                  "referenceSpotPrices[0]",
+                  "30.0"
+                ],
+                "line": 44
+              }
+            ]
+          },
+          {
+            "result": {
+              "duration": 301840906,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"TicketsInKlondike.json\",\"absoluteFilePath\":\"artefacts/95_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "In Klondike I see 46 Tickets and I group them by events",
+            "keyword": "And ",
+            "line": 45,
+            "match": {
+              "arguments": [
+                {
+                  "val": "46",
+                  "offset": 18
+                }
+              ],
+              "location": "KlondikeSteps.In_Klondike_I_see_Tickets_and_I_group_them_by_events(int)"
+            }
+          },
+          {
+            "result": {
+              "duration": 7374951,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"GroupedTickets_PrimaryZuulGozerNoteTradeTicket.json\",\"absoluteFilePath\":\"artefacts/96_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "I see following Tickets grouped under \"Primary Zuul Gozer Note Trade Ticket\":",
+            "keyword": "And ",
+            "line": 46,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Primary Zuul Gozer Note Trade Ticket",
+                  "offset": 39
+                }
+              ],
+              "location": "KlondikeSteps.I_see_following_Tickets_grouped_under_(String,ExpectedTicket\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "TicketType",
+                  "SubTicketType",
+                  "Source",
+                  "State"
+                ],
+                "line": 47
+              },
+              {
+                "cells": [
+                  "PrimaryZuulGozerNoteTradeTicket",
+                  "",
+                  "",
+                  "Corrected"
+                ],
+                "line": 48
+              },
+              {
+                "cells": [
+                  "IssuanceTicket",
+                  "",
+                  "",
+                  "Corrected"
+                ],
+                "line": 49
+              },
+              {
+                "cells": [
+                  "TriggerRebuildTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 50
+              },
+              {
+                "cells": [
+                  "SecuritisedTradeTicketNF",
+                  "",
+                  "",
+                  "Corrected"
+                ],
+                "line": 51
+              },
+              {
+                "cells": [
+                  "EventStoreTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 52
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Primary Zuul Gozer Note Trade Ticket",
+                  "",
+                  "Processed"
+                ],
+                "line": 53
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Issuance Ticket",
+                  "",
+                  "Processed"
+                ],
+                "line": 54
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Securitised Trade Ticket N F",
+                  "",
+                  "Processed"
+                ],
+                "line": 55
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "ProductCreationWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 56
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "TradeTicketWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 57
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "SecuritisationWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 58
+              },
+              {
+                "cells": [
+                  "GenerateTermsheetTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 59
+              },
+              {
+                "cells": [
+                  "CpssFeedTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 60
+              },
+              {
+                "cells": [
+                  "ColtFeedTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 61
+              },
+              {
+                "cells": [
+                  "ColtFeedTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 62
+              },
+              {
+                "cells": [
+                  "CpssUpdateTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 63
+              }
+            ]
+          },
+          {
+            "result": {
+              "duration": 6104829,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"GroupedTickets_PrimaryZuulGozerNoteTradeTicket.json\",\"absoluteFilePath\":\"artefacts/97_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "I see following Tickets grouped under \"Primary Zuul Gozer Note Trade Ticket after 1 amend\":",
+            "keyword": "And ",
+            "line": 64,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Primary Zuul Gozer Note Trade Ticket after 1 amend",
+                  "offset": 39
+                }
+              ],
+              "location": "KlondikeSteps.I_see_following_Tickets_grouped_under_(String,ExpectedTicket\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "TicketType",
+                  "SubTicketType",
+                  "Source",
+                  "State"
+                ],
+                "line": 65
+              },
+              {
+                "cells": [
+                  "PrimaryZuulGozerNoteTradeTicket",
+                  "",
+                  "",
+                  "Corrected"
+                ],
+                "line": 66
+              },
+              {
+                "cells": [
+                  "GenerateTermsheetTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 67
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "ProductCreationWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 68
+              },
+              {
+                "cells": [
+                  "SecuritisedTradeTicketNF",
+                  "",
+                  "",
+                  "Corrected"
+                ],
+                "line": 69
+              },
+              {
+                "cells": [
+                  "CorrectionResultsTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 70
+              },
+              {
+                "cells": [
+                  "EventStoreTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 71
+              },
+              {
+                "cells": [
+                  "TriggerRebuildTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 72
+              },
+              {
+                "cells": [
+                  "CpssFeedTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 73
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Primary Zuul Gozer Note Trade Ticket",
+                  "",
+                  "Processed"
+                ],
+                "line": 74
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "TradeTicketWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 75
+              },
+              {
+                "cells": [
+                  "ColtFeedTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 76
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Securitised Trade Ticket N F",
+                  "",
+                  "Processed"
+                ],
+                "line": 77
+              },
+              {
+                "cells": [
+                  "CpssUpdateTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 78
+              }
+            ]
+          },
+          {
+            "result": {
+              "duration": 8623624,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"GroupedTickets_PrimaryZuulGozerNoteTradeTicket.json\",\"absoluteFilePath\":\"artefacts/98_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "I see following Tickets grouped under \"Primary Zuul Gozer Note Trade Ticket after 2 amend\":",
+            "keyword": "And ",
+            "line": 79,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Primary Zuul Gozer Note Trade Ticket after 2 amend",
+                  "offset": 39
+                }
+              ],
+              "location": "KlondikeSteps.I_see_following_Tickets_grouped_under_(String,ExpectedTicket\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "TicketType",
+                  "SubTicketType",
+                  "Source",
+                  "State"
+                ],
+                "line": 80
+              },
+              {
+                "cells": [
+                  "PrimaryZuulGozerNoteTradeTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 81
+              },
+              {
+                "cells": [
+                  "SecuritisedTradeTicketNF",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 82
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "ProductCreationWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 83
+              },
+              {
+                "cells": [
+                  "TriggerRebuildTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 84
+              },
+              {
+                "cells": [
+                  "IssuanceTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 85
+              },
+              {
+                "cells": [
+                  "GenerateTermsheetTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 86
+              },
+              {
+                "cells": [
+                  "EventStoreTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 87
+              },
+              {
+                "cells": [
+                  "CpssFeedTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 88
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Primary Zuul Gozer Note Trade Ticket",
+                  "",
+                  "Processed"
+                ],
+                "line": 89
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "TradeTicketWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 90
+              },
+              {
+                "cells": [
+                  "ColtFeedTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 91
+              },
+              {
+                "cells": [
+                  "ColtFeedTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 92
+              },
+              {
+                "cells": [
+                  "BookRiskTicket",
+                  "",
+                  "SecuritisationWorkflowAgent",
+                  "Processed"
+                ],
+                "line": 93
+              },
+              {
+                "cells": [
+                  "ColtFeedTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 94
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Issuance Ticket",
+                  "",
+                  "Processed"
+                ],
+                "line": 95
+              },
+              {
+                "cells": [
+                  "GrTicket",
+                  "Securitised Trade Ticket N F",
+                  "",
+                  "Processed"
+                ],
+                "line": 96
+              },
+              {
+                "cells": [
+                  "CpssUpdateTicket",
+                  "",
+                  "",
+                  "Processed"
+                ],
+                "line": 97
+              }
+            ]
+          },
+          {
+            "result": {
+              "duration": 180000711962,
+              "status": "passed"
+            },
+            "name": "I wait for 180 seconds so that GR EPS Instrument Cache is updated",
+            "keyword": "And ",
+            "line": 99,
+            "match": {
+              "arguments": [
+                {
+                  "val": "180",
+                  "offset": 11
+                },
+                {
+                  "val": "so that GR EPS Instrument Cache is updated",
+                  "offset": 23
+                }
+              ],
+              "location": "GenericSteps.I_wait_for_seconds(long,String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 2349022541,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"GrInstrument.json\",\"absoluteFilePath\":\"artefacts/99_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "In GR US I see a new Instrument",
+            "keyword": "Then ",
+            "line": 100,
+            "match": {
+              "arguments": [
+                {
+                  "val": "US",
+                  "offset": 6
+                }
+              ],
+              "location": "GRSteps.In_GR_I_see_a_new_Instrument(String)"
+            },
+            "output": [
+              "Querying GrEpsServer{grConfig\u003dGRConfig{grServerLocation\u003dhttp://xstm8280dap.stm.swissbank.com:8171/gr/us, rcasLoginId\u003dsso_stompro, rcasPassword\u003dXXXXXXXX}} for Instrument by symbol: STOMP165304"
+            ]
+          },
+          {
+            "result": {
+              "duration": 2094692956,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"Tallies_In_GR.json\",\"absoluteFilePath\":\"artefacts/100_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "In GR I see 8 Cancelled Tallies for Risk Class \"USD-GED\"",
+            "keyword": "And ",
+            "line": 101,
+            "match": {
+              "arguments": [
+                {
+                  "val": "8",
+                  "offset": 12
+                },
+                {
+                  "val": "Cancelled",
+                  "offset": 14
+                },
+                {
+                  "val": "USD-GED",
+                  "offset": 48
+                }
+              ],
+              "location": "GRSteps.In_GR_I_see_Live_Or_Cancelled_Tallies_for_Risk_Class(int,String,String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 794791,
+              "status": "passed"
+            },
+            "name": "In GR I see 3 Live Tallies for Risk Class \"SPX\"",
+            "keyword": "And ",
+            "line": 102,
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 12
+                },
+                {
+                  "val": "Live",
+                  "offset": 14
+                },
+                {
+                  "val": "SPX",
+                  "offset": 43
+                }
+              ],
+              "location": "GRSteps.In_GR_I_see_Live_Or_Cancelled_Tallies_for_Risk_Class(int,String,String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 1084781,
+              "status": "passed"
+            },
+            "embeddings": [
+              {
+                "mime_type": "{\"fileName\":\"ObservationCurves_For_AAPL.json\",\"absoluteFilePath\":\"artefacts/101_Artifact.json\"}",
+                "data": "UmVhZCBmcm9tIGRpc2M\u003d"
+              }
+            ],
+            "name": "The GR Instrument has following Observation Curves:",
+            "keyword": "And ",
+            "line": 103,
+            "match": {
+              "location": "GRSteps.The_GR_Instrument_has_following_Observation_Curves(ExpectedObservationCurve\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Underlying",
+                  "Value",
+                  "Source"
+                ],
+                "line": 104
+              },
+              {
+                "cells": [
+                  "AAPL",
+                  "30",
+                  "Reuters"
+                ],
+                "line": 105
+              }
+            ]
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "[MPP] PAC Gen-2 Amend.feature"
+  }
+]
